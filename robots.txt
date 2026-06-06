@@ -1,30 +1,38 @@
-# E85India.com — robots.txt
-# https://e85india.com
-
 User-agent: *
 Allow: /
 
 # Sitemap location
 Sitemap: https://e85india.com/sitemap.xml
 
-# Crawl delay for well-behaved bots
-Crawl-delay: 1
-
-# Disallow sensitive paths (update as needed)
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
+# Disallow common system files
+Disallow: /.git/
+Disallow: /node_modules/
 Disallow: /*.json$
 
-# Allow specific search engine bots unrestricted access
+# Allow major search engine bots
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Crawl delay (in seconds)
 Crawl-delay: 1
