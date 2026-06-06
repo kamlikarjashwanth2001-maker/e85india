@@ -1,90 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-    <!-- HOME PAGE -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://e85india.com/</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-06-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://e85india.com/hero-bg.jpg</image:loc>
-            <image:title>E85 India - Fuel Intelligence Platform</image:title>
-            <image:caption>India's leading E85 ethanol fuel platform</image:caption>
-        </image:image>
     </url>
-
-    <!-- VEHICLE COMPATIBILITY CHECKER -->
-    <url>
-        <loc>https://e85india.com/#vehicles</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://e85india.com/flex-vehicle.jpg</image:loc>
-            <image:title>Vehicle Compatibility Checker</image:title>
-            <image:caption>Check if your car, bike or auto is E85 compatible</image:caption>
-        </image:image>
-    </url>
-
-    <!-- FUEL STATIONS -->
-    <url>
-        <loc>https://e85india.com/#stations</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- COST CALCULATOR -->
-    <url>
-        <loc>https://e85india.com/#calculator</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- LIVE DASHBOARD -->
-    <url>
-        <loc>https://e85india.com/#dashboard</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>hourly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- FLEX FUEL VEHICLE CATALOG -->
-    <url>
-        <loc>https://e85india.com/#catalog</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- POLICY TIMELINE -->
-    <url>
-        <loc>https://e85india.com/#policy</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- COMPARISON SECTION -->
-    <url>
-        <loc>https://e85india.com/#comparison</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- CONTACT / FOOTER -->
-    <url>
-        <loc>https://e85india.com/#contact</loc>
-        <lastmod>2025-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
 </urlset>
