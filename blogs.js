@@ -130,7 +130,33 @@ const blogData = [
         gradient: 'linear-gradient(135deg,#6A1B9A,#AB47BC)',
         date: 'Jan 8, 2025',
         readTime: '8 min read'
-    }
+    },
+        {
+        id: 9,
+        url: 'blog/best-mileage-e85-bikes-india-2025.html',
+        title: 'Best Mileage E85 Bikes India 2025 - Top 10 List',
+        description: 'Top 10 flex fuel bikes - Hero Splendor (70 km/L), Bajaj CT 110X, Honda Activa Flex! Compare prices, mileage, brands.',
+        icon: '🏍️',
+        category: 'BIKES LIST',
+        categoryColor: '#FF6F00',
+        gradient: 'linear-gradient(135deg,#FF6F00,#FFA726)',
+        date: 'Jan 16, 2025',
+        readTime: '8 min read',
+        isNew: true
+    },
+    {
+        id: 10,
+        url: 'blog/e85-vs-petrol-vs-cng-comparison-india.html',
+        title: 'E85 vs Petrol vs CNG - Konsa Better Hai? 2025',
+        description: 'Complete fuel comparison - E85 ₹74, Petrol ₹94, CNG ₹76. Price, mileage, pollution, availability. Konsa best?',
+        icon: '⚔️',
+        category: 'COMPARISON',
+        categoryColor: '#1976D2',
+        gradient: 'linear-gradient(135deg,#1976D2,#42a5f5)',
+        date: 'Jan 16, 2025',
+        readTime: '10 min read',
+        isNew: true
+    },
     
     // ===== ADD NEW BLOGS HERE =====
     // Just copy any block above and modify!
