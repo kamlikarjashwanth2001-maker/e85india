@@ -226,6 +226,54 @@ a{text-decoration:none;color:inherit}
 .footer-col ul li{margin-bottom:10px}
 .footer-col ul li a{font-size:0.78rem;color:rgba(255,255,255,0.45)}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;text-align:center;font-size:0.73rem;color:rgba(255,255,255,0.35)}
+  /* MOBILE MENU STYLES */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    z-index: 99999;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    padding: 80px 20px 20px;
+    overflow-y: auto;
+}
+.mobile-menu.active { right: 0; }
+.mobile-menu a {
+    display: block;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    transition: all 0.3s;
+}
+.mobile-menu a:hover, .mobile-menu a:active {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding-left: 28px;
+}
+.mobile-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 99998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.mobile-overlay.active { opacity: 1; visibility: visible; }
+.mobile-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+.mobile-hamburger.active span:nth-child(2) { opacity: 0; }
+.mobile-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+.mobile-hamburger span { transition: all 0.3s; }
 
 @media (max-width:1024px){
 .navbar{padding:0 24px}.nav-links{display:none}.mobile-hamburger{display:flex}
@@ -253,6 +301,17 @@ a{text-decoration:none;color:inherit}
 <span class="ticker-item"><span class="ticker-dot"></span> <strong>Hyderabad:</strong> E85 ₹74.05/L</span>
 <span class="ticker-item"><span class="ticker-dot"></span> 📊 <strong>Saving:</strong> 21.6%</span>
 </div></div>
+  <!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#" data-close>🏠 Home</a>
+    <a href="#vehicles" data-close>🚗 Vehicle Check</a>
+    <a href="#stations" data-close>📍 Fuel Stations</a>
+    <a href="#calculator" data-close>💰 Calculator</a>
+    <a href="#dashboard" data-close>📊 Dashboard</a>
+    <a href="#catalog" data-close>🚙 FFV Models</a>
+    <a href="#policy" data-close>📜 Policy</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
 
 <header class="navbar">
 <a href="#" class="nav-logo">
@@ -883,10 +942,38 @@ window.addEventListener('DOMContentLoaded', function() {
   });
   renderCat('all');
   
-  // Mobile menu
-  document.querySelector('.mobile-hamburger').onclick = function() {
-    alert('Mobile menu - Use scroll to navigate sections');
-  };
+// MOBILE MENU - WORKING!
+var hamburger = document.querySelector('.mobile-hamburger');
+var mobileMenu = document.getElementById('mobileMenu');
+var mobileOverlay = document.getElementById('mobileOverlay');
+
+if (hamburger) {
+    hamburger.onclick = function() {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        mobileOverlay.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    };
+}
+
+if (mobileOverlay) {
+    mobileOverlay.onclick = function() {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        this.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+}
+
+// Close menu when clicking any link
+document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+    link.onclick = function() {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+});
   
   console.log('🎉 Everything loaded successfully!');
 });
