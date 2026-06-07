@@ -1,21 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://e85india.com/</loc>
-        <lastmod>2026-06-07</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url><loc>https://e85india.com/blog/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
-<url><loc>https://e85india.com/blog/e85-launch-pib-2026.html</loc><priority>0.8</priority></url>
-<url><loc>https://e85india.com/blog/e20-vs-e85-vs-petrol-comparison.html</loc><priority>0.8</priority></url>
-<url><loc>https://e85india.com/blog/flex-fuel-vehicles-india-complete-list.html</loc><priority>0.8</priority></url>
-<url><loc>https://e85india.com/blog/e85-stations-india-city-guide.html</loc><priority>0.8</priority></url>
-    <!-- Vehicle Guide Pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- ========== MAIN PAGES ========== -->
+
+<!-- Homepage - Most Important -->
 <url>
-    <loc>https://e85india.com/vehicles/honda-activa-e85-compatibility.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://e85india.com/</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+</url>
+
+<!-- Section Anchors -->
+<url>
+    <loc>https://e85india.com/#vehicles</loc>
+    <lastmod>2025-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 </url>
+
+<url>
+    <loc>https://e85india.com/#stations</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/#calculator</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/#dashboard</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/#catalog</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/#blog</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/#policy</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
+
+<!-- ========== BLOG PAGES ========== -->
+
+<!-- Blog Listing Page -->
+<url>
+    <loc>https://e85india.com/blog/</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<!-- HIGH PRIORITY: New Indian-Style Blogs -->
+<url>
+    <loc>https://e85india.com/blog/e85-fuel-price-today-india.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/e85-fuel-kya-hai-hindi-guide.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/e85-fuel-good-or-bad-review-india.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/best-mileage-e85-bikes-india-2025.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/e85-vs-petrol-vs-cng-comparison-india.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/e85-conversion-kit-price-india-2025.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/e85-fuel-engine-damage-truth-india.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<!-- EXISTING BLOGS -->
+<url>
+    <loc>https://e85india.com/blog/e85-launch-pib-2026.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/e20-vs-e85-vs-petrol-comparison.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/flex-fuel-vehicles-india-complete-list.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<url>
+    <loc>https://e85india.com/blog/e85-stations-india-city-guide.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+</url>
+
+<!-- ========== VEHICLE GUIDE PAGES ========== -->
+
+<url>
+    <loc>https://e85india.com/vehicles/honda-activa-e85-compatibility.html</loc>
+    <lastmod>2025-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
 </urlset>
