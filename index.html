@@ -1817,116 +1817,18 @@ a{text-decoration:none;color:inherit}
 </div>
 </section>
  <!-- ===== BLOG SECTION ===== -->
+<!-- ===== BLOG SECTION (AUTO-LOADED) ===== -->
 <section class="blog-section section" id="blog">
 <div class="section-container">
 <div class="section-header">
 <div class="section-badge" style="background:var(--primary-bg);">📰 Blog & Vehicle Guides</div>
 <h2 class="section-title">Latest <span class="green">E85 Insights & Guides</span></h2>
-<p class="section-subtitle">Stay updated with the latest news, vehicle guides, and analysis on E85 fuel in India.</p>
+<p class="section-subtitle">Stay updated with the latest news, vehicle guides, prices, and analysis on E85 fuel in India.</p>
 </div>
 
-<div class="blog-grid">
-
-<!-- Honda Activa Vehicle Guide - NEW! -->
-<a href="vehicles/honda-activa-e85-compatibility.html" class="blog-card">
-<div class="blog-card-img-wrap">
-<div class="blog-card-img" style="background:linear-gradient(135deg,#FF6F00,#FFA726);">
-<div class="blog-card-icon">🛵</div>
-</div>
-<span class="blog-card-category" style="background:rgba(255,111,0,0.95);color:white;">VEHICLE GUIDE</span>
-</div>
-<div class="blog-card-body">
-<div class="blog-card-meta">
-<span>📅 Jan 15, 2025</span>
-<span>•</span>
-<span>6 min read</span>
-</div>
-<h3 class="blog-card-title">Honda Activa E85 Compatibility Guide 2025</h3>
-<p class="blog-card-desc">Is Honda Activa E85 compatible? Complete year-wise compatibility check. Honda Activa Flex Fuel (2024+) supports E85 directly. Older models need conversion kit.</p>
-<span class="blog-card-link">Read Full Guide →</span>
-</div>
-</a>
-
-<!-- Blog Post 1 -->
-<a href="blog/e85-launch-pib-2026.html" class="blog-card">
-<div class="blog-card-img-wrap">
-<div class="blog-card-img" style="background:linear-gradient(135deg,#2e7d32,#4caf50);">
-<div class="blog-card-icon">🚀</div>
-</div>
-<span class="blog-card-category cat-news">NEWS</span>
-</div>
-<div class="blog-card-body">
-<div class="blog-card-meta">
-<span>📅 Jan 15, 2025</span>
-<span>•</span>
-<span>5 min read</span>
-</div>
-<h3 class="blog-card-title">E85 Official Launch: PIB Announcement 2026</h3>
-<p class="blog-card-desc">India's Press Information Bureau announces nationwide E85 fuel launch in 2026. Complete rollout plan, infrastructure expansion, and key milestones revealed.</p>
-<span class="blog-card-link">Read More →</span>
-</div>
-</a>
-
-<!-- Blog Post 2 -->
-<a href="blog/e20-vs-e85-vs-petrol-comparison.html" class="blog-card">
-<div class="blog-card-img-wrap">
-<div class="blog-card-img" style="background:linear-gradient(135deg,#1976D2,#42a5f5);">
-<div class="blog-card-icon">⚖️</div>
-</div>
-<span class="blog-card-category cat-comparison">COMPARISON</span>
-</div>
-<div class="blog-card-body">
-<div class="blog-card-meta">
-<span>📅 Jan 12, 2025</span>
-<span>•</span>
-<span>7 min read</span>
-</div>
-<h3 class="blog-card-title">E20 vs E85 vs Petrol: The Ultimate Comparison</h3>
-<p class="blog-card-desc">Detailed comparison of E20, E85, and traditional petrol fuels. Price, mileage, emissions, performance, and vehicle compatibility analysis.</p>
-<span class="blog-card-link">Read More →</span>
-</div>
-</a>
-
-<!-- Blog Post 3 -->
-<a href="blog/flex-fuel-vehicles-india-complete-list.html" class="blog-card">
-<div class="blog-card-img-wrap">
-<div class="blog-card-img" style="background:linear-gradient(135deg,#E65100,#FFA726);">
-<div class="blog-card-icon">🚗</div>
-</div>
-<span class="blog-card-category cat-vehicles">VEHICLES</span>
-</div>
-<div class="blog-card-body">
-<div class="blog-card-meta">
-<span>📅 Jan 10, 2025</span>
-<span>•</span>
-<span>10 min read</span>
-</div>
-<h3 class="blog-card-title">Flex Fuel Vehicles in India: Complete List 2025</h3>
-<p class="blog-card-desc">Comprehensive list of all flex fuel vehicles available in India. Cars, bikes, and auto rickshaws with prices, specs, and availability.</p>
-<span class="blog-card-link">Read More →</span>
-</div>
-</a>
-
-<!-- Blog Post 4 -->
-<a href="blog/e85-stations-india-city-guide.html" class="blog-card">
-<div class="blog-card-img-wrap">
-<div class="blog-card-img" style="background:linear-gradient(135deg,#6A1B9A,#AB47BC);">
-<div class="blog-card-icon">📍</div>
-</div>
-<span class="blog-card-category cat-stations">STATIONS</span>
-</div>
-<div class="blog-card-body">
-<div class="blog-card-meta">
-<span>📅 Jan 8, 2025</span>
-<span>•</span>
-<span>8 min read</span>
-</div>
-<h3 class="blog-card-title">E85 Stations in India: City-Wise Guide</h3>
-<p class="blog-card-desc">Find E85 fuel stations across major Indian cities. Mumbai, Delhi, Bengaluru, Pune, Chennai - complete location guide with addresses.</p>
-<span class="blog-card-link">Read More →</span>
-</div>
-</a>
-
+<!-- Blogs will auto-load here from blogs.js -->
+<div class="blog-grid" id="autoBlogGrid">
+<div style="text-align:center;padding:40px;color:#999">Loading blogs...</div>
 </div>
 
 <div class="blog-view-all-wrap">
@@ -1935,6 +1837,9 @@ a{text-decoration:none;color:inherit}
 
 </div>
 </section>
+
+<!-- Load blogs.js -->
+<script src="blogs.js"></script>
 <!-- 8. POLICY -->
 <section class="policy-section section" id="policy">
 <div class="section-container">
