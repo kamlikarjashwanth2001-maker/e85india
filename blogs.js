@@ -157,6 +157,32 @@ const blogData = [
         readTime: '10 min read',
         isNew: true
     },
+        {
+        id: 11,
+        url: 'blog/e85-conversion-kit-price-india-2025.html',
+        title: 'E85 Conversion Kit Price India 2025 - ₹15,000?',
+        description: 'E85 conversion kit price India ₹15,000-25,000! Old car/bike ko E85 me convert kaise karein. Bosch, Magneti Marelli brands, installation guide.',
+        icon: '🔧',
+        category: 'CONVERSION',
+        categoryColor: '#FF6F00',
+        gradient: 'linear-gradient(135deg,#E65100,#FF6F00)',
+        date: 'Jan 17, 2025',
+        readTime: '9 min read',
+        isNew: true
+    },
+    {
+        id: 12,
+        url: 'blog/e85-fuel-engine-damage-truth-india.html',
+        title: 'E85 Fuel Engine Damage - Sach Kya Hai? Myths Busted',
+        description: '7 common myths busted! E85 se engine damage hota hai? FFV me 100% safe, old vehicles me risk. Real facts revealed.',
+        icon: '⚠️',
+        category: 'TRUTH',
+        categoryColor: '#c62828',
+        gradient: 'linear-gradient(135deg,#c62828,#e53935)',
+        date: 'Jan 17, 2025',
+        readTime: '11 min read',
+        isNew: true
+    },
     
     // ===== ADD NEW BLOGS HERE =====
     // Just copy any block above and modify!
