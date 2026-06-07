@@ -1,36 +1,383 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>E85 Officially Launched in India - PIB Press Release</title>
-<meta name="description" content="Government launches E85 fuel at 48 stations. ₹20 cheaper than petrol. 500 stations by Dec 2026.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E85 rollout commences across 48 retail outlets | Press Information Bureau</title>
+    <meta name="description" content="E85 rollout commences across 48 retail outlets of Public Sector OMCs. Save Money, Save Environment, Save Foreign Exchange. Official PIB release.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e8eef2;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            padding: 40px 20px;
+            line-height: 1.5;
+        }
+
+        /* Main container - like a PDF page */
+        .press-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* TOP RED BANNER - PIB Style */
+        .pib-header {
+            background: #c51c1c;
+            padding: 12px 30px;
+        }
+
+        .pib-header h2 {
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main content area */
+        .content {
+            padding: 35px 40px;
+        }
+
+        /* Main heading - Large bold */
+        .main-heading {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a1a;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            border-left: 4px solid #c51c1c;
+            padding-left: 20px;
+        }
+
+        /* Subheading - Minister quote style */
+        .minister-quote {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2d6a4f;
+            margin: 20px 0;
+            padding: 15px 20px;
+            background: #f0f9f0;
+            border-radius: 8px;
+            border-left: 4px solid #2d6a4f;
+        }
+
+        /* Hindi text style */
+        .hindi-text {
+            font-size: 16px;
+            color: #c51c1c;
+            font-weight: 500;
+            margin: 15px 0;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Date and source */
+        .date-source {
+            color: #666;
+            font-size: 13px;
+            margin: 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Section headings */
+        .section-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a472a;
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #2d6a4f;
+        }
+
+        /* Stats grid - 4 cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .stat-card {
+            background: #f5f5f5;
+            text-align: center;
+            padding: 20px 10px;
+            border-radius: 10px;
+            border-bottom: 3px solid #2d6a4f;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #c51c1c;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        /* Benefits box - orange highlight */
+        .benefits-box {
+            background: #fff8f0;
+            border-left: 5px solid #ff8c42;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .benefits-box h3 {
+            color: #ff8c42;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .benefits-box ul {
+            margin-left: 20px;
+        }
+
+        .benefits-box li {
+            margin: 8px 0;
+        }
+
+        /* Warning box - red */
+        .warning-box {
+            background: #fff0f0;
+            border-left: 5px solid #c51c1c;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box h3 {
+            color: #c51c1c;
+            margin-bottom: 12px;
+        }
+
+        /* Green box for farmer income */
+        .green-box {
+            background: #e8f5e9;
+            border-left: 5px solid #2d6a4f;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        /* Two column layout for large content */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 25px 0;
+        }
+
+        /* Button */
+        .compat-button {
+            display: inline-block;
+            background: #c51c1c;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+
+        .compat-button:hover {
+            background: #8b0000;
+        }
+
+        /* Footer */
+        .footer {
+            background: #f5f5f5;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer a {
+            color: #c51c1c;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .content {
+                padding: 20px;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+            .main-heading {
+                font-size: 22px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<h1>Government Launches E85 Fuel in India</h1>
+<div class="press-container">
 
-<p><strong>June 5, 2026</strong> - Union Minister Hardeep Singh Puri launched E85 fuel at an IndianOil outlet in New Delhi.</p>
+    <!-- PIB Red Header -->
+    <div class="pib-header">
+        <h2>Press Information Bureau <span style="font-weight: normal;">Government of India</span></h2>
+    </div>
 
-<h2>Key Highlights</h2>
-<ul>
-<li>48 E85 stations across India now</li>
-<li>500 stations by December 2026</li>
-<li>5,000 stations by December 2027</li>
-<li>E85 is ₹20/litre cheaper than petrol</li>
-</ul>
+    <div class="content">
 
-<h2>Environmental Benefits</h2>
-<ul>
-<li>61% lower greenhouse gas emissions</li>
-<li>Near-zero particulate matter</li>
-</ul>
+        <!-- Main Title -->
+        <div class="main-heading">
+            E85 rollout commences across 48 retail outlets of Public Sector OMCs;<br>
+            Save Money, Save Environment, Save Foreign Exchange!
+        </div>
 
-<h2>⚠️ Important</h2>
-<p>E85 is ONLY for Flex Fuel Vehicles (FFVs). Regular cars cannot use E85.</p>
+        <!-- Minister Quote -->
+        <div class="minister-quote">
+            "E85-powered vehicles run on domestically produced ethanol derived from the sweat and toil of Indian farmers"<br>
+            — Sh. Hardeep Singh Puri, Minister of Petroleum & Natural Gas
+        </div>
 
-<h2>Check Your Vehicle</h2>
-<p><a href="https://e85india.com/#vehicles">Use our compatibility checker →</a></p>
+        <!-- Hindi Text -->
+        <div class="hindi-text">
+            "हर बूंद में भारत है, हर बूंद में हमारे किसान हैं, हर बूंद में भारत का भविष्य है"
+        </div>
 
-<p><a href="https://e85india.com/">← Back to Home</a> | <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2269509" target="_blank">Read Original PIB Release</a></p>
+        <!-- Date -->
+        <div class="date-source">
+            📅 प्रविष्टि तिथि: 05 JUN 2026 7:57PM | PIB Delhi
+        </div>
+
+        <!-- Launch Announcement -->
+        <p style="margin-bottom: 15px;">
+            Union Minister for Petroleum and Natural Gas <strong>Shri Hardeep Singh Puri</strong> launched <strong>E85 fuel</strong> at an IndianOil retail outlet in New Delhi today on the occasion of <strong>World Environment Day 2026</strong>. Senior officials of the Ministry of Petroleum and Natural Gas, and CMDs of public sector OMCs were also present during the event.
+        </p>
+
+        <p style="margin-bottom: 20px;">
+            <strong>E85</strong> is a high-ethanol blended fuel comprising <strong>80–85% ethanol</strong> and <strong>14–19% petrol</strong>, specifically designed for use in <strong>flex-fuel vehicles (FFVs)</strong>. The initiative aims to facilitate the adoption of Flex-Fuel Vehicles, which are capable of operating on ethanol blends from E20 to E100.
+        </p>
+
+        <!-- Stats Grid - Like a dashboard -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">48</div>
+                <div class="stat-label">E85 Stations<br>Now</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500</div>
+                <div class="stat-label">By Dec 2026</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5,000</div>
+                <div class="stat-label">By Dec 2027</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">₹20/L</div>
+                <div class="stat-label">Cheaper than Petrol</div>
+            </div>
+        </div>
+
+        <!-- Benefits Box -->
+        <div class="benefits-box">
+            <h3>✅ Benefits of E85 (Official Data)</h3>
+            <ul>
+                <li>💰 <strong>₹20 per litre lower</strong> than conventional petrol</li>
+                <li>🌍 <strong>61% lower</strong> lifecycle greenhouse gas emissions</li>
+                <li>⚡ <strong>Research Octane Number (RON) of ~108</strong> → superior knock resistance, better performance</li>
+                <li>🌱 <strong>Near-zero particulate matter</strong> → cleaner urban air quality</li>
+            </ul>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="two-columns">
+            <div>
+                <div class="section-title">💰 Economic Impact</div>
+                <ul style="margin-left: 20px;">
+                    <li>Foreign exchange saved: <strong>₹1.84 lakh crore</strong></li>
+                    <li>Crude oil imports substituted: <strong>302 lakh metric tonnes</strong></li>
+                    <li>If 50% new vehicles are FFV: <strong>₹12,403 crore</strong> to farmers</li>
+                    <li>Additional forex savings: <strong>₹15,151 crore/year</strong></li>
+                    <li>CO2 reduction: <strong>66.4 lakh metric tonnes</strong></li>
+                </ul>
+            </div>
+            <div>
+                <div class="section-title">📈 Expansion Roadmap</div>
+                <ul style="margin-left: 20px;">
+                    <li><strong>June 2026:</strong> 48 stations launched</li>
+                    <li><strong>December 2026:</strong> 500 stations</li>
+                    <li><strong>December 2027:</strong> 5,000 stations</li>
+                    <li><strong>2030-31 Target:</strong> 26% ethanol blending nationwide</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Warning Box -->
+        <div class="warning-box">
+            <h3>⚠️ Important Clarification from the Minister</h3>
+            <p><strong>"E85 fuel is meant exclusively for specially designed flex-fuel vehicles, not for normal petrol vehicles."</strong></p>
+            <ul style="margin-top: 10px; margin-left: 20px;">
+                <li>✅ Since E20 became standard, <strong>no reported engine failures</strong> due to ethanol blending</li>
+                <li>✅ E20-compatible vehicles deliver <strong>improved acceleration and better ride quality</strong></li>
+                <li>✅ Ethanol-blended fuel has <strong>no impact on vehicle insurance validity</strong></li>
+            </ul>
+        </div>
+
+        <!-- Green Box for Farmer Income -->
+        <div class="green-box">
+            <h3>🌾 Farmers: From Annadatas to Urjadatas</h3>
+            <p>Every litre of ethanol replaces imported fossil fuel. <strong>Every drop of E85 carries with it the spirit of Atmanirbhar Bharat.</strong></p>
+            <p style="margin-top: 10px;">The Minister noted that while EV technologies rely on imported batteries and critical minerals, <strong>E85-powered vehicles run on domestically produced ethanol from the sweat and toil of Indian farmers.</strong></p>
+        </div>
+
+        <!-- Flex Fuel Vehicles Section -->
+        <div class="section-title">🚗 Flex Fuel Vehicles in India</div>
+        <p>The recent launch of flex-fuel compatible two-wheelers, four-wheelers and now E85 fuel marks India's transition from pilot initiatives towards a structured national flex-fuel ecosystem.</p>
+        <ul style="margin: 15px 0 15px 20px;">
+            <li>Hero Splendor+ Flex Fuel (India's first FFV bike)</li>
+            <li>Maruti Wagon R Flex Fuel (India's first FFV car)</li>
+            <li>More models from Tata, Hyundai, Toyota expected by 2027</li>
+        </ul>
+
+        <!-- Call to Action Button -->
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="https://e85india.com/#vehicles" class="compat-button">🔍 Check if YOUR Vehicle is Compatible with E85 →</a>
+        </div>
+
+        <!-- Brazil Comparison -->
+        <div class="green-box">
+            <h3>🌎 Global Inspiration: Brazil's Success Story</h3>
+            <p>The Minister noted that Brazil has demonstrated the long-term viability of higher ethanol blends over decades, with <strong>over 80% of its light vehicle fleet currently operating on flex-fuel technology.</strong> India is following this proven path.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Source: Press Information Bureau (PIB), Government of India | Release ID: 2269509</p>
+        <p style="margin-top: 8px;">
+            <a href="https://e85india.com/">← Back to E85 India Home</a> | 
+            <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2269509" target="_blank">📄 Read Original PIB Release</a>
+        </p>
+        <p style="margin-top: 10px;">© 2026 E85 India — Your Complete Flex Fuel Intelligence Platform</p>
+    </div>
+
+</div>
 
 </body>
 </html>
