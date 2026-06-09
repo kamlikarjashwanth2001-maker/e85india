@@ -185,7 +185,7 @@ const blogData = [
     },
     {
     id: 13,
-    url: 'e85-fuel-stations-delhi.html',
+    url: 'blog/e85-fuel-stations-delhi.html',
     title: 'E85 Fuel Stations in Delhi - Price ₹82.12/L | Find Near Me',
     description: 'Delhi me E85 kahan milta hai? 8 verified stations with addresses. Current price ₹82.12/L. Petrol se ₹20/L sasta!',
     icon: '🏛️',
