@@ -195,6 +195,71 @@ const blogData = [
     date: 'Jun 9, 2026',
     readTime: '3 min read',
     isNew: true
+},
+    {
+    id: 14,
+    url: 'blog/e85-fuel-stations-mumbai.html',
+    title: 'E85 Fuel Stations in Mumbai - Price ₹91.21/L | Find Near Me',
+    description: 'Mumbai me E85 petrol pump kahan hai? 6 verified stations. Current price ₹91.21/L. Regular petrol se ₹20/L bachao!',
+    icon: '🌊',
+    category: 'STATIONS',
+    categoryColor: '#1565c0',
+    gradient: 'linear-gradient(135deg,#1565c0,#1976d2)',
+    date: 'Jun 9, 2026',
+    readTime: '3 min read',
+    isNew: true
+},
+{
+    id: 15,
+    url: 'blog/e85-fuel-stations-pune.html',
+    title: 'E85 Fuel Stations in Pune - Price ₹91.52/L | Find Near Me',
+    description: 'Pune me E85 kahan milega? 3 verified stations with exact addresses. ₹91.52/L price. Flex fuel users ke liye guide.',
+    icon: '🏙️',
+    category: 'STATIONS',
+    categoryColor: '#1565c0',
+    gradient: 'linear-gradient(135deg,#1565c0,#1976d2)',
+    date: 'Jun 9, 2026',
+    readTime: '3 min read',
+    isNew: true
+},
+{
+    id: 16,
+    url: 'blog/e85-fuel-stations-bengaluru.html',
+    title: 'E85 Fuel Stations in Bengaluru - Price ₹90.89/L | Find Near Me',
+    description: 'Bengaluru me E85 pump kahan hai? 5 verified locations. ₹90.89/L current price. Indiranagar, Koramangala, Whitefield aur zyada.',
+    icon: '🌿',
+    category: 'STATIONS',
+    categoryColor: '#1565c0',
+    gradient: 'linear-gradient(135deg,#1565c0,#1976d2)',
+    date: 'Jun 9, 2026',
+    readTime: '3 min read',
+    isNew: true
+},
+{
+    id: 17,
+    url: 'blog/e85-fuel-stations-chennai.html',
+    title: 'E85 Fuel Stations in Chennai - Price ₹87.87/L | Find Near Me',
+    description: 'Chennai me E85 petrol kahan milta hai? 5 verified stations. ₹87.87/L price. Anna Nagar, OMR, T. Nagar locations included.',
+    icon: '🌴',
+    category: 'STATIONS',
+    categoryColor: '#1565c0',
+    gradient: 'linear-gradient(135deg,#1565c0,#1976d2)',
+    date: 'Jun 9, 2026',
+    readTime: '3 min read',
+    isNew: true
+},
+{
+    id: 18,
+    url: 'blog/e85-fuel-stations-hyderabad.html',
+    title: 'E85 Fuel Stations in Hyderabad - Price ₹95.69/L | Find Near Me',
+    description: 'Hyderabad me E85 kahan milega? 4 verified stations. ₹95.69/L price. Hitech City, Gachibowli, Jubilee Hills locations.',
+    icon: '💎',
+    category: 'STATIONS',
+    categoryColor: '#1565c0',
+    gradient: 'linear-gradient(135deg,#1565c0,#1976d2)',
+    date: 'Jun 9, 2026',
+    readTime: '3 min read',
+    isNew: true
 }
     
     // ===== ADD NEW BLOGS HERE =====
