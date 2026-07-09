@@ -29,6 +29,19 @@
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
     {
+        id: 99,
+        url: 'blog/top-upcoming-flex-fuel-cars-india.html',
+        title: 'Top 5 Upcoming Flex Fuel Cars in India (E85 Ready)',
+        description: 'Maruti Suzuki, Tata Motors, and Toyota are gearing up to launch E85 flex fuel cars in India. Check out the top 5 anticipated vehicles!',
+        icon: '🚗',
+        category: 'TRENDING',
+        categoryColor: '#e65100',
+        gradient: 'linear-gradient(135deg,#e65100,#ff6f00)',
+        date: 'Jul 9, 2026',
+        readTime: '6 min read',
+        isNew: true
+    },
+    {
         id: 1,
         url: 'blog/e85-fuel-price-today-india.html',
         title: 'E85 Fuel Price Today India - Live Rates 2025',
