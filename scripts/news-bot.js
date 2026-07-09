@@ -105,7 +105,6 @@ async function rewriteWithGemini(item) {
         return JSON.parse(text);
     } catch (e) {
         console.error(`Gemini API error for item ${item.title}:`, e.message);
-        logIndex({ action: "gemini_api_fail", url: item.link, error: e.message });
         return null;
     }
 }
