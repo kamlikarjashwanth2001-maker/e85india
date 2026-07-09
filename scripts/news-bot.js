@@ -29,6 +29,7 @@ const KEYWORDS = [
 const DATA_DIR = path.join(__dirname, '../data');
 const POSTED_URLS_FILE = path.join(DATA_DIR, 'posted-urls.json');
 const INDEX_LOG_FILE = path.join(DATA_DIR, 'index-log.json');
+const NEW_URLS_FILE = path.join(DATA_DIR, 'new-urls.json');
 const BLOGS_JS_FILE = path.join(__dirname, '../blogs.js');
 const SITEMAP_FILE = path.join(__dirname, '../sitemap.xml');
 const BLOG_DIR = path.join(__dirname, '../blog');
@@ -37,6 +38,7 @@ const BLOG_DIR = path.join(__dirname, '../blog');
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR);
 if (!fs.existsSync(POSTED_URLS_FILE)) fs.writeFileSync(POSTED_URLS_FILE, JSON.stringify([]));
 if (!fs.existsSync(INDEX_LOG_FILE)) fs.writeFileSync(INDEX_LOG_FILE, JSON.stringify([]));
+if (!fs.existsSync(NEW_URLS_FILE)) fs.writeFileSync(NEW_URLS_FILE, JSON.stringify([]));
 
 const postedUrls = JSON.parse(fs.readFileSync(POSTED_URLS_FILE, 'utf-8'));
 const indexLogs = JSON.parse(fs.readFileSync(INDEX_LOG_FILE, 'utf-8'));
@@ -237,56 +239,74 @@ function updateSitemap(geminiData) {
     fs.writeFileSync(SITEMAP_FILE, updatedSitemap);
 }
 
-async function performIndexingSubmissions(geminiData) {
-    const url = \`https://e85india.com/blog/\${geminiData.slug}.html\`;
+async function processIndexing() {
+    console.log("Starting indexing process...");
+    let newUrls = JSON.parse(fs.readFileSync(NEW_URLS_FILE, 'utf-8'));
     
-    // 1. Google Ping
-    try {
-        await axios.get('https://www.google.com/ping?sitemap=https://e85india.com/sitemap.xml');
-        logIndex({ action: "google_ping", status: "success" });
-    } catch (e) {
-        logIndex({ action: "google_ping", status: "error", msg: e.message });
-    }
+    // Prune entries older than 30 days
+    const thirtyDaysAgo = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    newUrls = newUrls.filter(entry => new Date(entry.timestamp).getTime() > thirtyDaysAgo);
 
-    // 2. IndexNow
-    if (process.env.INDEXNOW_KEY) {
-        try {
-            await axios.post('https://api.indexnow.org/indexnow', {
-                host: 'e85india.com',
-                key: process.env.INDEXNOW_KEY,
-                keyLocation: \`https://e85india.com/\${process.env.INDEXNOW_KEY}.txt\`,
-                urlList: [url]
-            });
-            logIndex({ action: "indexnow", status: "success", url });
-        } catch (e) {
-            logIndex({ action: "indexnow", status: "error", url, msg: e.message });
-        }
-    }
+    for (let i = 0; i < newUrls.length; i++) {
+        const entry = newUrls[i];
+        if (entry.indexed) continue;
 
-    // 3. Google Indexing API
-    if (process.env.GOOGLE_INDEXING_SA_KEY) {
+        console.log(\`Indexing URL: \${entry.url}\`);
+        const url = entry.url;
+        
+        // 1. Google Ping
         try {
-            const { google } = require('googleapis');
-            const credentials = JSON.parse(process.env.GOOGLE_INDEXING_SA_KEY);
-            const jwtClient = new google.auth.JWT(
-                credentials.client_email,
-                null,
-                credentials.private_key,
-                ['https://www.googleapis.com/auth/indexing'],
-                null
-            );
-            
-            await jwtClient.authorize();
-            const res = await axios.post(
-                'https://indexing.googleapis.com/v3/urlNotifications:publish',
-                { url, type: 'URL_UPDATED' },
-                { headers: { 'Authorization': \`Bearer \${jwtClient.credentials.access_token}\` } }
-            );
-            logIndex({ action: "google_indexing_api", status: "success", url });
+            await axios.get('https://www.google.com/ping?sitemap=https://e85india.com/sitemap.xml');
+            logIndex({ action: "google_ping", status: "success" });
         } catch (e) {
-            logIndex({ action: "google_indexing_api", status: "error", url, msg: e.message });
+            logIndex({ action: "google_ping", status: "error", msg: e.message });
         }
+
+        // 2. IndexNow
+        if (process.env.INDEXNOW_KEY) {
+            try {
+                await axios.post('https://api.indexnow.org/indexnow', {
+                    host: 'e85india.com',
+                    key: process.env.INDEXNOW_KEY,
+                    keyLocation: \`https://e85india.com/\${process.env.INDEXNOW_KEY}.txt\`,
+                    urlList: [url]
+                });
+                logIndex({ action: "indexnow", status: "success", url });
+            } catch (e) {
+                logIndex({ action: "indexnow", status: "error", url, msg: e.message });
+            }
+        }
+
+        // 3. Google Indexing API
+        if (process.env.GOOGLE_INDEXING_SA_KEY) {
+            try {
+                const { google } = require('googleapis');
+                const credentials = JSON.parse(process.env.GOOGLE_INDEXING_SA_KEY);
+                const jwtClient = new google.auth.JWT(
+                    credentials.client_email,
+                    null,
+                    credentials.private_key,
+                    ['https://www.googleapis.com/auth/indexing'],
+                    null
+                );
+                
+                await jwtClient.authorize();
+                await axios.post(
+                    'https://indexing.googleapis.com/v3/urlNotifications:publish',
+                    { url, type: 'URL_UPDATED' },
+                    { headers: { 'Authorization': \`Bearer \${jwtClient.credentials.access_token}\` } }
+                );
+                logIndex({ action: "google_indexing_api", status: "success", url });
+            } catch (e) {
+                logIndex({ action: "google_indexing_api", status: "error", url, msg: e.message });
+            }
+        }
+        
+        newUrls[i].indexed = true;
     }
+    
+    // Always save to persist pruning and indexed status
+    fs.writeFileSync(NEW_URLS_FILE, JSON.stringify(newUrls, null, 2));
 }
 
 async function main() {
@@ -323,11 +343,16 @@ async function main() {
         postedUrls.push(item.link);
         fs.writeFileSync(POSTED_URLS_FILE, JSON.stringify(postedUrls, null, 2));
         
-        // Background indexing
-        await performIndexingSubmissions(aiResult);
+        // Add to new-urls.json
+        const newUrls = JSON.parse(fs.readFileSync(NEW_URLS_FILE, 'utf-8'));
+        newUrls.push({ url: \`https://e85india.com/blog/\${aiResult.slug}.html\`, timestamp: new Date().toISOString(), indexed: false });
+        fs.writeFileSync(NEW_URLS_FILE, JSON.stringify(newUrls, null, 2));
         
         processedCount++;
     }
+    
+    await processIndexing();
+    
     console.log(\`Finished processing \${processedCount} items.\`);
 }
 
