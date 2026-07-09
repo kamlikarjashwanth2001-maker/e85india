@@ -1,0 +1,27 @@
+{
+  "name": "e85india",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blogs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamlikarjashwanth2001-maker/e85india.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kamlikarjashwanth2001-maker/e85india/issues"
+  },
+  "homepage": "https://github.com/kamlikarjashwanth2001-maker/e85india#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.18.1",
+    "googleapis": "^173.0.0",
+    "rss-parser": "^3.13.0"
+  }
+}
