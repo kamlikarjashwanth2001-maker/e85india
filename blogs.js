@@ -29,6 +29,19 @@
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
     {
+        id: 1783611121832,
+        url: 'blog/govt-announces-e85-subsidies-2026.html',
+        title: 'Government Announces Huge E85 Subsidies for 2026',
+        description: 'The Indian Government has announced major subsidies for E85 flex-fuel vehicles starting in 2026 to combat pollution and lower fuel costs.',
+        icon: '📰',
+        category: 'NEWS',
+        categoryColor: '#e65100',
+        gradient: 'linear-gradient(135deg,#e65100,#ff6f00)',
+        date: 'Jul 9, 2026',
+        readTime: '2 min read',
+        isNew: true
+    },
+{
         id: 99,
         url: 'blog/top-upcoming-flex-fuel-cars-india.html',
         title: 'Top 5 Upcoming Flex Fuel Cars in India (E85 Ready)',
