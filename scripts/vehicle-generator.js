@@ -167,6 +167,33 @@ async function main() {
         const filePath = path.join(VEHICLES_DIR, `${slug}.html`);
         
         fs.writeFileSync(filePath, htmlContent);
+        
+        // Auto-inject into index.html
+        const indexPath = path.join(__dirname, '../index.html');
+        let indexHtml = fs.readFileSync(indexPath, 'utf-8');
+        
+        let icon = '🚗'; let badgeText = 'CAR'; let badgeColor = '#2e7d32';
+        const vLower = vehicle.toLowerCase();
+        if (vLower.includes('bike') || vLower.includes('pulsar') || vLower.includes('enfield') || vLower.includes('duke') || vLower.includes('r15') || vLower.includes('splendor') || vLower.includes('apache')) {
+            icon = '🏍️'; badgeText = 'MOTORCYCLE'; badgeColor = '#1b5e20';
+        } else if (vLower.includes('activa') || vLower.includes('jupiter') || vLower.includes('access')) {
+            icon = '🛵'; badgeText = 'SCOOTER'; badgeColor = '#2e7d32';
+        } else if (vLower.includes('fortuner') || vLower.includes('thar') || vLower.includes('scorpio') || vLower.includes('creta') || vLower.includes('seltos') || vLower.includes('xuv')) {
+            icon = '🚙'; badgeText = 'SUV'; badgeColor = '#ff6f00';
+        }
+        
+        const cardHtml = `
+<a href="vehicles/${slug}.html" style="display:block;background:white;border-radius:16px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:all 0.3s;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#2e7d32';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
+<div style="font-size:3rem;margin-bottom:12px;">${icon}</div>
+<div style="font-size:0.7rem;font-weight:700;color:${badgeColor};text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">${badgeText}</div>
+<h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;color:#1a1a1a;">${vehicle} E85 Guide</h3>
+<p style="font-size:0.85rem;color:#666;line-height:1.6;margin-bottom:14px;">Complete E85 compatibility check for ${vehicle}. Find out if you can use flex fuel.</p>
+<span style="display:inline-block;font-size:0.85rem;color:#2e7d32;font-weight:700;">Read Guide →</span>
+</a>`;
+
+        indexHtml = indexHtml.replace('<!-- AUTO_GENERATED_VEHICLES_START -->', `<!-- AUTO_GENERATED_VEHICLES_START -->\n${cardHtml}`);
+        fs.writeFileSync(indexPath, indexHtml);
+
         updateSitemap(slug);
         
         // Add to index queue
