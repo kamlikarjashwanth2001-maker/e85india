@@ -101,7 +101,7 @@ async function rewriteWithGemini(item) {
     try {
         const result = await model.generateContent(prompt);
         let text = result.response.text().trim();
-        if(text.startsWith('\`\`\`json')) text = text.replace(/^\`\`\`json\n?/, '').replace(/\n?\`\`\`$/, '');
+        if(text.startsWith('```json')) text = text.replace(/^```json\n?/, '').replace(/\n?```$/, '');
         return JSON.parse(text);
     } catch (e) {
         console.error(`Gemini API error for item ${item.title}:`, e.message);
@@ -189,7 +189,7 @@ ${geminiData.content}
 </body>
 </html>`;
     
-    fs.writeFileSync(path.join(BLOG_DIR, \`\${geminiData.slug}.html\`), htmlTemplate);
+    fs.writeFileSync(path.join(BLOG_DIR, `${geminiData.slug}.html`), htmlTemplate);
 }
 
 function updateBlogsJs(geminiData) {
@@ -199,23 +199,23 @@ function updateBlogsJs(geminiData) {
     const dateObj = new Date();
     const dateFormatted = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
-    const newEntry = \`    {
-        id: \${newId},
-        url: 'blog/\${geminiData.slug}.html',
-        title: '\${geminiData.seo_title.replace(/'/g, "\\'")}',
-        description: '\${geminiData.meta_description.replace(/'/g, "\\'")}',
+    const newEntry = `    {
+        id: ${newId},
+        url: 'blog/${geminiData.slug}.html',
+        title: '${geminiData.seo_title.replace(/'/g, "\\'")}',
+        description: '${geminiData.meta_description.replace(/'/g, "\\'")}',
         icon: '📰',
         category: 'NEWS',
         categoryColor: '#e65100',
         gradient: 'linear-gradient(135deg,#e65100,#ff6f00)',
-        date: '\${dateFormatted}',
+        date: '${dateFormatted}',
         readTime: '3 min read',
         isNew: true
-    },\n\`;
+    },\n`;
 
     const updatedBlogJs = blogJs.replace(
         /const blogData = \[\s*\/\/ ===== NEW BLOGS \(Top of list\) =====\s*/, 
-        \`const blogData = [\\n    // ===== NEW BLOGS (Top of list) =====\\n\${newEntry}\`
+        `const blogData = [\n    // ===== NEW BLOGS (Top of list) =====\n${newEntry}`
     );
     
     fs.writeFileSync(BLOGS_JS_FILE, updatedBlogJs);
@@ -224,17 +224,17 @@ function updateBlogsJs(geminiData) {
 function updateSitemap(geminiData) {
     const sitemap = fs.readFileSync(SITEMAP_FILE, 'utf-8');
     const dateStr = new Date().toISOString().split('T')[0];
-    const newSitemapEntry = \`
+    const newSitemapEntry = `
 <url>
-    <loc>https://e85india.com/blog/\${geminiData.slug}.html</loc>
-    <lastmod>\${dateStr}</lastmod>
+    <loc>https://e85india.com/blog/${geminiData.slug}.html</loc>
+    <lastmod>${dateStr}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-</url>\`;
+</url>`;
     
     const updatedSitemap = sitemap.replace(
         /<!-- ========== BLOG PAGES ========== -->/,
-        \`<!-- ========== BLOG PAGES ========== -->\${newSitemapEntry}\`
+        `<!-- ========== BLOG PAGES ========== -->${newSitemapEntry}`
     );
     fs.writeFileSync(SITEMAP_FILE, updatedSitemap);
 }
@@ -251,7 +251,7 @@ async function processIndexing() {
         const entry = newUrls[i];
         if (entry.indexed) continue;
 
-        console.log(\`Indexing URL: \${entry.url}\`);
+        console.log(`Indexing URL: ${entry.url}`);
         const url = entry.url;
         
         // 1. Google Ping
@@ -268,7 +268,7 @@ async function processIndexing() {
                 await axios.post('https://api.indexnow.org/indexnow', {
                     host: 'e85india.com',
                     key: process.env.INDEXNOW_KEY,
-                    keyLocation: \`https://e85india.com/\${process.env.INDEXNOW_KEY}.txt\`,
+                    keyLocation: `https://e85india.com/${process.env.INDEXNOW_KEY}.txt`,
                     urlList: [url]
                 });
                 logIndex({ action: "indexnow", status: "success", url });
@@ -294,7 +294,7 @@ async function processIndexing() {
                 await axios.post(
                     'https://indexing.googleapis.com/v3/urlNotifications:publish',
                     { url, type: 'URL_UPDATED' },
-                    { headers: { 'Authorization': \`Bearer \${jwtClient.credentials.access_token}\` } }
+                    { headers: { 'Authorization': `Bearer ${jwtClient.credentials.access_token}` } }
                 );
                 logIndex({ action: "google_indexing_api", status: "success", url });
             } catch (e) {
@@ -312,7 +312,7 @@ async function processIndexing() {
 async function main() {
     console.log("Starting News Bot Pipeline...");
     const items = await fetchRelevantNews();
-    console.log(\`Found \${items.length} relevant unfiltered items.\`);
+    console.log(`Found ${items.length} relevant unfiltered items.`);
     
     let processedCount = 0;
     
@@ -322,20 +322,20 @@ async function main() {
             break; // Max 3 per run
         }
         
-        console.log(\`Evaluating: \${item.title}\`);
+        console.log(`Evaluating: ${item.title}`);
         const aiResult = await rewriteWithGemini(item);
         
         if (!aiResult) continue;
         
         if (aiResult.relevance_score < 6) {
-            console.log(\`Skipping due to low relevance score: \${aiResult.relevance_score}\`);
+            console.log(`Skipping due to low relevance score: ${aiResult.relevance_score}`);
             // Add to posted anyway so we don't keep asking Gemini about it
             postedUrls.push(item.link);
             fs.writeFileSync(POSTED_URLS_FILE, JSON.stringify(postedUrls, null, 2));
             continue;
         }
 
-        console.log(\`Publishing: \${aiResult.slug}\`);
+        console.log(`Publishing: ${aiResult.slug}`);
         generateHtmlFile(aiResult);
         updateBlogsJs(aiResult);
         updateSitemap(aiResult);
@@ -345,7 +345,7 @@ async function main() {
         
         // Add to new-urls.json
         const newUrls = JSON.parse(fs.readFileSync(NEW_URLS_FILE, 'utf-8'));
-        newUrls.push({ url: \`https://e85india.com/blog/\${aiResult.slug}.html\`, timestamp: new Date().toISOString(), indexed: false });
+        newUrls.push({ url: `https://e85india.com/blog/${aiResult.slug}.html`, timestamp: new Date().toISOString(), indexed: false });
         fs.writeFileSync(NEW_URLS_FILE, JSON.stringify(newUrls, null, 2));
         
         processedCount++;
@@ -353,7 +353,7 @@ async function main() {
     
     await processIndexing();
     
-    console.log(\`Finished processing \${processedCount} items.\`);
+    console.log(`Finished processing ${processedCount} items.`);
 }
 
 main().catch(console.error);
