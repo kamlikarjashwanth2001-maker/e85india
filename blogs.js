@@ -29,6 +29,19 @@
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
     {
+        id: 1720608757000,
+        url: 'blog/peddi-full-movie-watch-online-tickets.html',
+        title: 'Peddi Full Movie: Where to Watch Online & Buy Tickets',
+        description: 'Looking for Peddi full movie watch online? Find out how to securely book your tickets and stream the latest hit Peddi using the official District App.',
+        icon: '🍿',
+        category: 'MOVIES',
+        categoryColor: '#6a1b9a',
+        gradient: 'linear-gradient(135deg,#6a1b9a,#4a148c)',
+        date: 'Jul 10, 2026',
+        readTime: '2 min read',
+        isNew: true
+    },
+    {
         id: 1720608756914,
         url: 'blog/why-washington-sundar-again-fans-question-indias-selection.html',
         title: '\'Why Washington Sundar Again?\' Fans Question India\'s Selection',
