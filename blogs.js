@@ -29,6 +29,19 @@
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
     {
+        id: 1720608756914,
+        url: 'blog/why-washington-sundar-again-fans-question-indias-selection.html',
+        title: '\'Why Washington Sundar Again?\' Fans Question India\'s Selection',
+        description: 'Following a poor performance against England, all-rounder Washington Sundar\'s place in India\'s T20 team is being heavily debated by fans and critics.',
+        icon: '🏏',
+        category: 'SPORTS',
+        categoryColor: '#1565c0',
+        gradient: 'linear-gradient(135deg,#1565c0,#0d47a1)',
+        date: 'Jul 10, 2026',
+        readTime: '3 min read',
+        isNew: true
+    },
+    {
         id: 1783611121832,
         url: 'blog/govt-announces-e85-subsidies-2026.html',
         title: 'Government Announces Huge E85 Subsidies for 2026',
