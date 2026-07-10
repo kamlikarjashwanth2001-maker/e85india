@@ -29,6 +29,19 @@
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
     {
+        id: 1720608757300,
+        url: 'blog/bhandara-uncle-death-news.html',
+        title: '"Bhandara Kara Do Babuji": The Tragic End to Viral Fame',
+        description: 'The viral "Bhandara Kara Do Babuji" internet sensation has reportedly been found dead near Haridwar. Here is everything we know about the tragic end of Insta Bhandara Uncle.',
+        icon: '🙏',
+        category: 'NEWS',
+        categoryColor: '#37474f',
+        gradient: 'linear-gradient(135deg,#37474f,#263238)',
+        date: 'Jul 10, 2026',
+        readTime: '3 min read',
+        isNew: true
+    },
+    {
         id: 1720608757200,
         url: 'blog/bsnl-rs-134166-satellite-phone.html',
         title: 'BSNL Rs 134,166 Satellite Phone Explained',
