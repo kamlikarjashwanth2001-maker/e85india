@@ -1,38 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
 Sitemap: https://e85india.com/sitemap.xml
-
-# Disallow common system files
-Disallow: /.git/
-Disallow: /node_modules/
-Disallow: /*.json$
-
-# Allow major search engine bots
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: facebot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-# Crawl delay (in seconds)
-Crawl-delay: 1
