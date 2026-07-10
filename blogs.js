@@ -29,6 +29,19 @@
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
     {
+        id: 1720608757100,
+        url: 'blog/peddi-ott-release-date.html',
+        title: 'Peddi OTT Release Date & Platform: When & Where to Watch?',
+        description: 'Looking for the Peddi OTT release date? Find out which platform bought the streaming rights and when Ram Charan\'s Peddi movie will be available online.',
+        icon: '📱',
+        category: 'OTT',
+        categoryColor: '#c62828',
+        gradient: 'linear-gradient(135deg,#c62828,#b71c1c)',
+        date: 'Jul 10, 2026',
+        readTime: '2 min read',
+        isNew: true
+    },
+    {
         id: 1720608757000,
         url: 'blog/peddi-full-movie-watch-online-tickets.html',
         title: 'Peddi Full Movie: Where to Watch Online & Buy Tickets',
