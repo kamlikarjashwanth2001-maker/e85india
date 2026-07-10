@@ -114,6 +114,7 @@ function generateHtmlFile(geminiData) {
     const htmlTemplate = `<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="google-adsense-account" content="ca-pub-9430868039114935">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
