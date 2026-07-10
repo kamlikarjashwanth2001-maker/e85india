@@ -155,6 +155,7 @@ p{margin-bottom:15px;color:#444}
 .footer{background:#111;color:white;padding:30px 20px;text-align:center;margin-top:40px}
 .footer a{color:#ff9800;text-decoration:none;margin:0 10px}
 </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9430868039114935" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="header">
