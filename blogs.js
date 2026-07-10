@@ -29,6 +29,19 @@
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
     {
+        id: 1720608757200,
+        url: 'blog/bsnl-rs-134166-satellite-phone.html',
+        title: 'BSNL Rs 134,166 Satellite Phone Explained',
+        description: 'Discover the details of the BSNL Rs 134,166 satellite phone. Learn about its features, pricing, plans, and how it is used for critical communication in India.',
+        icon: '📡',
+        category: 'TECH',
+        categoryColor: '#0033a0',
+        gradient: 'linear-gradient(135deg,#0033a0,#002277)',
+        date: 'Jul 10, 2026',
+        readTime: '3 min read',
+        isNew: true
+    },
+    {
         id: 1720608757100,
         url: 'blog/peddi-ott-release-date.html',
         title: 'Peddi OTT Release Date & Platform: When & Where to Watch?',
