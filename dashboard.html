@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- ========== SEO META TAGS ========== -->
-<title>E85 India - #1 E85 Fuel Platform | Flex Fuel Vehicles, Stations, Price 2025</title>
-<meta name="description" content="E85 India - India's leading E85 fuel platform. Find 48 E85 stations, check vehicle compatibility for cars, bikes & autos. Compare E85 vs Petrol prices. Save 21% on fuel. Live ethanol blending data 2025.">
+<title>Live E85 Data Dashboard | E85 India</title>
+<meta name="description" content="Real-time analytics, pricing, and ethanol blending data for the Indian E85 ecosystem.">
 <meta name="keywords" content="E85, E85 India, E85 fuel, E85 fuel India, E85 vehicles, E85 stations, E85 price, flex fuel India, flex fuel vehicles India, flex fuel cars India, flex fuel bikes, ethanol fuel India, ethanol blending, E20 fuel, E20 vs E85, biofuel India, IOCL E85, BPCL E85, HPCL E85, Maruti flex fuel, Toyota flex fuel, TVS flex fuel, Bajaj flex fuel, ethanol price India, E85 conversion kit">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
@@ -30,7 +30,7 @@
 <meta name="twitter:title" content="E85 India - #1 E85 Fuel Platform">
 <meta name="twitter:description" content="Find E85 stations, check vehicle compatibility, save 21% on fuel.">
 <meta name="twitter:image" content="https://e85india.com/hero-bg.jpg">
-<link rel="canonical" href="https://e85india.com/">
+<link rel="canonical" href="https://e85india.com/dashboard.html">
 <meta name="theme-color" content="#2e7d32">
 
 <!-- ========== SCHEMA MARKUP ========== -->
@@ -328,42 +328,26 @@ body.menu-open{overflow:hidden}
 @media (max-width:768px){.hero-title{font-size:2rem}.metrics-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr}}
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9430868039114935" crossorigin="anonymous"></script>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my car E85 compatible?","acceptedAnswer":{"@type":"Answer","text":"Only factory-fitted Flex Fuel Vehicles or those with conversion kits are fully E85 compatible. Standard vehicles made after 2020 are usually E20 compatible but cannot run on E85."}},{"@type":"Question","name":"How much does E85 cost vs petrol?","acceptedAnswer":{"@type":"Answer","text":"E85 is significantly cheaper than petrol. For example, in Delhi, E85 is priced around ₹82.12/L compared to petrol at over ₹94/L, saving you up to 21%."}},{"@type":"Question","name":"Where can I get E85 in Delhi/Mumbai/Bengaluru?","acceptedAnswer":{"@type":"Answer","text":"E85 is available at select IOCL, BPCL, and HPCL stations. Key locations include Connaught Place in Delhi, Bandra in Mumbai, and Whitefield in Bengaluru."}},{"@type":"Question","name":"Is E85 available in Chennai/Hyderabad?","acceptedAnswer":{"@type":"Answer","text":"E85 is not yet officially launched in Chennai or Hyderabad. Stations are being built, and official availability in these cities is coming soon."}}]}
-</script>
 </head>
 <body>
-
-<div class="price-ticker"><div class="ticker-track">
-<span class="ticker-item"><span class="ticker-dot"></span> <strong>Mumbai:</strong> E85 ₹91.18/L</span>
-<span class="ticker-item"><span class="ticker-dot"></span> <strong>Delhi:</strong> E85 ₹82.12/L</span>
-<span class="ticker-item"><span class="ticker-dot"></span> <strong>Bengaluru:</strong> E85 ₹80.50/L</span>
-<span class="ticker-item"><span class="ticker-dot"></span> <strong>Pune:</strong> E85 ₹73.95/L</span>
-<span class="ticker-item"><span class="ticker-dot"></span> <strong>Nagpur:</strong> E85 ₹74.50/L</span>
-<span class="ticker-item"><span class="ticker-dot"></span> <strong>Chennai & Hyderabad:</strong> Coming Soon</span>
-<span class="ticker-item"><span class="ticker-dot"></span> 📅 <strong>Last Updated:</strong> July 11, 2026 | <a href="#policy" style="color:#c8e6c9">Source</a></span>
-</div></div>
-
 <header class="navbar">
 <a href="#" class="nav-logo">
 <svg class="nav-logo-icon" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#e8f5e9" stroke="#2e7d32"/><path d="M20 7C20 7 13 14 13 21a7 7 0 0014 0c0-7-7-14-7-14z" fill="#2e7d32"/><path d="M20 11C20 11 15 16 15 21a5 5 0 0010 0c0-5-5-10-5-10z" fill="#4caf50"/></svg>
 <div><div class="nav-brand-name"><em>E85</em> India</div><div class="nav-brand-tagline">CLEANER, GREENER, STRONGER INDIA</div></div>
 </a>
 <nav class="nav-links">
-<a href="/" class="active">Home</a>
-<a href="/vehicle-checker.html">Vehicle Check</a>
-<a href="/stations.html">Fuel Stations</a>
-<a href="/calculator.html">Calculator</a>
-<a href="/dashboard.html">Dashboard</a>
-<a href="/catalog.html">FFV Models</a>
-<a href="/about.html">Policy</a>
-<a href="/blog/index.html">Blog</a>
-<a href="/dashboard.html" class="nav-cta-btn">Live Dashboard</a>
+<a href="#" class="active">Home</a>
+<a href="#vehicles">Vehicle Check</a>
+<a href="#stations">Fuel Stations</a>
+<a href="#calculator">Calculator</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#catalog">FFV Models</a>
+<a href="#policy">Policy</a>
+<a href="#blog">Blog</a>
+<a href="#dashboard" class="nav-cta-btn">Live Dashboard</a>
 </nav>
 <button class="mobile-hamburger" id="mobileHamburger" type="button"><span></span><span></span><span></span></button>
 </header>
-
 <!-- MOBILE NAV OVERLAY -->
 <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
 
@@ -374,204 +358,19 @@ body.menu-open{overflow:hidden}
 <button class="mobile-nav-close" id="mobileNavClose" type="button">✕</button>
 </div>
 <div class="mobile-nav-links">
-<a href="/">🏠 Home</a>
-<a href="/vehicle-checker.html">🚗 Vehicle Check</a>
-<a href="/stations.html">📍 Fuel Stations</a>
-<a href="/calculator.html">💰 Cost Calculator</a>
-<a href="/dashboard.html">📊 Live Dashboard</a>
-<a href="/catalog.html">🚙 FFV Models</a>
-<a href="/catalog.html#vehicle-guides">📚 Vehicle Guides</a>
-<a href="/blog/index.html">📰 Blog & Guides</a>
-<a href="/blog/index.html">📚 All Blog Posts</a>
-<a href="/about.html">📜 Policy Timeline</a>
+<a href="#home">🏠 Home</a>
+<a href="#vehicles">🚗 Vehicle Check</a>
+<a href="#stations">📍 Fuel Stations</a>
+<a href="#calculator">💰 Cost Calculator</a>
+<a href="#dashboard">📊 Live Dashboard</a>
+<a href="#catalog">🚙 FFV Models</a>
+<a href="#vehicle-guides">📚 Vehicle Guides</a>
+<a href="#blog">📰 Blog & Guides</a>
+<a href="blog/index.html">📚 All Blog Posts</a>
+<a href="#policy">📜 Policy Timeline</a>
 </div>
 </nav>
-
-<!-- 1. HERO -->
-<section class="hero">
-<div class="hero-wrapper">
-<div class="hero-left">
-<h1 class="hero-title">India's <span class="green">E85</span><br>Fuel Intelligence<br>Platform</h1>
-<p class="hero-desc">Real-time analytics, fuel prices, station locator, vehicle compatibility and everything you need to know about E85 in India.</p>
-<div class="hero-btns">
-<a href="#vehicles" class="btn-primary">Check Your Vehicle →</a>
-<a href="#dashboard" class="btn-secondary">▶ Watch Video</a>
-</div>
-<div class="hero-tags">
-<span class="hero-tag"><span class="hero-tag-dot"></span>Cleaner Fuel</span>
-<span class="tag-separator"></span>
-<span class="hero-tag">Lower Emissions</span>
-<span class="tag-separator"></span>
-<span class="hero-tag">Stronger India</span>
-</div>
-<!-- NEWS ALERT -->
-<div style="text-align:center;margin:30px auto 0 auto;padding:15px 20px;background:linear-gradient(135deg,#fff5e6 0%,#ffe8d9 100%);border-radius:60px;max-width:500px;border-left:5px solid #ff5722;">
-<a href="/blog/e85-launch-pib-2026.html" style="color:#ff5722;text-decoration:none;font-weight:bold;font-size:16px;display:flex;align-items:center;justify-content:center;gap:10px;">
-<span style="background:#ff5722;color:white;padding:5px 12px;border-radius:50px;font-size:12px;">NEW</span>
-<span>📢 E85 Officially Launched in India! Read Full Story →</span>
-</a>
-</div>
-</div>
-<div class="hero-center"></div>
-<div class="hero-right">
-<div class="stats-row">
-<div class="stat-card"><div class="stat-icon">💧</div><div class="stat-value">48+</div><div class="stat-label">E85 Fuel Stations</div><div class="stat-sublabel">500 by Dec 2026, 5000 by 2027</div><div class="stat-change">↑ Expanding rapidly</div></div>
-<div class="stat-card"><div class="stat-icon">🛡️</div><div class="stat-value">85%</div><div class="stat-label">E85 Availability</div><div class="stat-sublabel">Average</div><div class="stat-change">↑ 12% this month</div></div>
-</div>
-<div class="stats-row">
-<div class="stat-card"><div class="stat-icon">🚗</div><div class="stat-value">60+</div><div class="stat-label">Flex Fuel Vehicles</div><div class="stat-sublabel">Cars & Bikes</div><div class="stat-change">↑ 12% this month</div></div>
-<div class="stat-card"><div class="stat-icon">📊</div><div class="stat-value">646 <span style="font-size:0.9rem">Cr L</span></div><div class="stat-label">Ethanol Production</div><div class="stat-sublabel">Annual</div><div class="stat-change">↑ 15% this year</div></div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 2. VEHICLE CHECKER -->
-<section class="vehicle-section section" id="vehicles">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge">🚗🏍️🛺 Check</div>
-<h2 class="section-title">Vehicle <span class="green">Compatibility</span> Checker</h2>
-<p class="section-subtitle">Find out if your car, bike, or auto rickshaw is compatible with E85 flex fuel.</p>
-</div>
-<div class="vehicle-grid">
-<div class="vehicle-form-card">
-<h3>Check Your Vehicle</h3>
-<p class="form-sub">Select vehicle type, brand, model, and year to check E85 compatibility.</p>
-<div class="form-group"><label>Vehicle Type</label>
-<select id="vt">
-<option value="">-- Select Vehicle Type --</option>
-<option value="car">🚗 Car</option>
-<option value="bike">🏍️ Bike / Motorcycle</option>
-<option value="auto">🛺 Auto Rickshaw</option>
-</select>
-</div>
-<div class="form-group"><label>Brand</label><select id="vb" disabled><option>Select Vehicle Type First</option></select></div>
-<div class="form-group"><label>Model</label><select id="vm" disabled><option>Select Brand First</option></select></div>
-<div class="form-group"><label>Manufacturing Year</label><select id="vy" disabled><option>Select Model First</option></select></div>
-<button class="check-btn" id="vcheckbtn" type="button">Check Compatibility →</button>
-<div id="vresult"></div>
-</div>
-<div class="vehicle-image-side"><img src="flex-vehicle.jpg" alt="Flex Fuel Vehicle"></div>
-</div>
-</div>
-</section>
-
-<!-- POPULAR VEHICLE GUIDES SECTION -->
-<section class="section" id="vehicle-guides" style="background:linear-gradient(135deg,#f1f8e9,#e8f5e9);padding:80px 40px;">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge" style="background:white;">📚 Vehicle Guides</div>
-<h2 class="section-title">Popular <span class="green">Vehicle E85 Guides</span></h2>
-<p class="section-subtitle">Detailed E85 compatibility guides for India's most popular vehicles</p>
-</div>
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;max-width:1200px;margin:0 auto;">
-
-<a href="vehicles/honda-activa-e85-compatibility.html" style="display:block;background:white;border-radius:16px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:all 0.3s;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#2e7d32';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-<div style="font-size:3rem;margin-bottom:12px;">🛵</div>
-<div style="font-size:0.7rem;font-weight:700;color:#2e7d32;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">SCOOTER</div>
-<h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;color:#1a1a1a;">Honda Activa E85 Guide</h3>
-<p style="font-size:0.85rem;color:#666;line-height:1.6;margin-bottom:14px;">Year-wise compatibility for Honda Activa. Check if your scooter supports E85 flex fuel.</p>
-<span style="display:inline-block;font-size:0.85rem;color:#2e7d32;font-weight:700;">Read Guide →</span>
-</a>
-
-<a href="vehicles/hero-splendor-e85-flex-fuel.html" style="display:block;background:white;border-radius:16px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:all 0.3s;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#2e7d32';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-<div style="font-size:3rem;margin-bottom:12px;">🏍️</div>
-<div style="font-size:0.7rem;font-weight:700;color:#2e7d32;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">MOTORCYCLE</div>
-<h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;color:#1a1a1a;">Hero Splendor E85 Guide</h3>
-<p style="font-size:0.85rem;color:#666;line-height:1.6;margin-bottom:14px;">Complete E85 compatibility check for Hero Splendor models from 1994 to 2025.</p>
-<span style="display:inline-block;font-size:0.85rem;color:#2e7d32;font-weight:700;">Read Guide →</span>
-</a>
-
-<a href="vehicles/tvs-apache-rtr-200-flex-fuel.html" style="display:block;background:white;border-radius:16px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:all 0.3s;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#2e7d32';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-<div style="font-size:3rem;margin-bottom:12px;">🏍️</div>
-<div style="font-size:0.7rem;font-weight:700;color:#ff6f00;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">🌟 INDIA'S 1ST FFV BIKE</div>
-<h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;color:#1a1a1a;">TVS Apache RTR 200 Flex</h3>
-<p style="font-size:0.85rem;color:#666;line-height:1.6;margin-bottom:14px;">India's first flex fuel motorcycle. Complete E85 compatibility & savings guide.</p>
-<span style="display:inline-block;font-size:0.85rem;color:#2e7d32;font-weight:700;">Read Guide →</span>
-</a>
-
-<a href="vehicles/maruti-swift-e85-compatibility.html" style="display:block;background:white;border-radius:16px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:all 0.3s;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#2e7d32';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-<div style="font-size:3rem;margin-bottom:12px;">🚗</div>
-<div style="font-size:0.7rem;font-weight:700;color:#2e7d32;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">HATCHBACK</div>
-<h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;color:#1a1a1a;">Maruti Swift E85 Guide</h3>
-<p style="font-size:0.85rem;color:#666;line-height:1.6;margin-bottom:14px;">India's best-selling hatchback. Check Swift E85 compatibility year-wise.</p>
-<span style="display:inline-block;font-size:0.85rem;color:#2e7d32;font-weight:700;">Read Guide →</span>
-</a>
-
-<a href="vehicles/toyota-innova-flex-fuel.html" style="display:block;background:white;border-radius:16px;padding:24px;text-decoration:none;color:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:all 0.3s;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#2e7d32';this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'">
-<div style="font-size:3rem;margin-bottom:12px;">🚙</div>
-<div style="font-size:0.7rem;font-weight:700;color:#2e7d32;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">SUV / MPV</div>
-<h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;color:#1a1a1a;">Toyota Innova Flex Fuel</h3>
-<p style="font-size:0.85rem;color:#666;line-height:1.6;margin-bottom:14px;">India's most popular MPV. Innova HyCross Flex Fuel detailed guide.</p>
-<span style="display:inline-block;font-size:0.85rem;color:#2e7d32;font-weight:700;">Read Guide →</span>
-</a>
-
-<!-- AUTO_GENERATED_VEHICLES_START -->
-
-<a href="#vehicles" style="display:block;background:linear-gradient(135deg,#2e7d32,#1b5e20);border-radius:16px;padding:24px;text-decoration:none;color:white;box-shadow:0 4px 12px rgba(46,125,50,0.3);transition:all 0.3s;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 12px 30px rgba(46,125,50,0.4)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 12px rgba(46,125,50,0.3)'">
-<div style="font-size:3rem;margin-bottom:12px;">🔍</div>
-<div style="font-size:0.7rem;font-weight:700;color:rgba(255,255,255,0.9);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">CHECK YOUR VEHICLE</div>
-<h3 style="font-size:1.15rem;font-weight:800;margin-bottom:8px;color:white;">Don't see your vehicle?</h3>
-<p style="font-size:0.85rem;color:rgba(255,255,255,0.95);line-height:1.6;margin-bottom:14px;">Use our free compatibility checker for any car, bike, or auto rickshaw!</p>
-<span style="display:inline-block;font-size:0.85rem;color:white;font-weight:700;">Check Now →</span>
-</a>
-
-</div>
-</div>
-</section>
-
-<!-- 3. FUEL STATIONS -->
-<section class="stations-section section" id="stations">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge" style="background:var(--primary-bg);">📍 Locate</div>
-<h2 class="section-title"><span class="green">E85</span> Fuel Station Network</h2>
-<p class="section-subtitle">Find E85 fuel stations near you across India.</p>
-</div>
-<div class="stations-toolbar">
-<div class="search-wrapper"><input type="text" class="search-input" id="searchStations" placeholder="🔍 Search by city (Delhi, Mumbai, Bengaluru...)"></div>
-<button class="submit-station-btn" onclick="alert('Submit Station feature - Coming soon!')">+ Submit New Station</button>
-</div>
-<div class="stations-layout">
-<div class="stations-list" id="stationsList"></div>
-<div id="stations-map"></div>
-</div>
-</div>
-</section>
-
-<!-- 4. CALCULATOR -->
-<section class="calc-section section" id="calculator">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge">💰 Calculator</div>
-<h2 class="section-title">Calculate Your <span class="green">Yearly Savings</span></h2>
-<p class="section-subtitle">See how much money and CO₂ you can save by switching to E85.</p>
-</div>
-<div class="calc-grid">
-<div class="calc-input-card">
-<h3>Your Driving Profile</h3>
-<p>Adjust the sliders to match your driving habits.</p>
-<div class="calc-slider-group"><div class="calc-slider-label"><span class="lbl-text">Yearly Distance</span><span class="lbl-val"><span id="calc-km">15000</span> km</span></div><input type="range" class="calc-slider" id="kmSlider" min="5000" max="50000" step="1000" value="15000"></div>
-<div class="calc-slider-group"><div class="calc-slider-label"><span class="lbl-text">Mileage (Petrol)</span><span class="lbl-val"><span id="calc-mil">15</span> km/L</span></div><input type="range" class="calc-slider" id="milSlider" min="8" max="70" step="1" value="15"></div>
-<div class="calc-slider-group"><div class="calc-slider-label"><span class="lbl-text">Petrol Price</span><span class="lbl-val">₹ <span id="calc-petrol">115.72</span>/L</span></div><input type="range" class="calc-slider" id="petrolSlider" min="80" max="120" step="0.5" value="94.72"></div>
-<div class="calc-slider-group"><div class="calc-slider-label"><span class="lbl-text">E85 Price</span><span class="lbl-val">₹ <span id="calc-e85">81.28</span>/L</span></div><input type="range" class="calc-slider" id="e85Slider" min="60" max="90" step="0.5" value="81.28"></div>
-</div>
-<div class="calc-result-card">
-<h3>Your Annual Savings</h3>
-<div class="calc-big-num"><span class="currency">₹</span><span id="calc-saving">12,500</span></div>
-<div class="calc-savings-period">per year by switching to E85</div>
-<div class="calc-breakdown">
-<div class="calc-break-item"><div class="lbl">Petrol Cost / Year</div><div class="val">₹<span id="calc-petrol-cost">94,720</span></div></div>
-<div class="calc-break-item"><div class="lbl">E85 Cost / Year</div><div class="val">₹<span id="calc-e85-cost">82,220</span></div></div>
-</div>
-<div class="calc-co2"><strong><span id="calc-co2-val">1,650</span> kg CO₂ saved/year</strong>Equivalent to planting <span id="calc-trees">75</span> trees 🌱</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 5. DASHBOARD -->
+<div style="padding-top: 100px;"></div>
 <section class="dashboard-section section" id="dashboard">
 <div class="section-container">
 <div class="section-header">
@@ -601,159 +400,6 @@ body.menu-open{overflow:hidden}
 </div>
 </section>
 
-<!-- 6. COMPARISON -->
-<section class="comparison-section section">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge">📊 Compare</div>
-<h2 class="section-title">E85 vs <span class="green">Petrol vs E20</span></h2>
-<p class="section-subtitle">See why E85 is the smartest fuel choice.</p>
-</div>
-<div class="glass-card">
-<h2 class="card-title" style="margin-bottom:24px">Price & Benefits Comparison</h2>
-<div class="comp-inner">
-<div>
-<div class="chart-label">Price Comparison (₹ /L)</div>
-<div class="bars-area">
-<div class="bar-col"><div class="bar-stick color-e85"><span class="bar-val">81.28</span></div><span class="bar-name">E85</span></div>
-<div class="bar-col"><div class="bar-stick color-e20"><span class="bar-val">87.15</span></div><span class="bar-name">E20</span></div>
-<div class="bar-col"><div class="bar-stick color-petrol"><span class="bar-val">94.72</span></div><span class="bar-name">Petrol</span></div>
-</div>
-</div>
-<div class="benefits-col">
-<div class="benefit-row"><div class="benefit-icon-box">✅</div><div class="benefit-info"><h4>Lower Cost</h4><p>Save up to 20% on fuel cost</p></div></div>
-<div class="benefit-row"><div class="benefit-icon-box">🌱</div><div class="benefit-info"><h4>Cleaner Emissions</h4><p>Up to 85% lower carbon emissions</p></div></div>
-<div class="benefit-row"><div class="benefit-icon-box">⚡</div><div class="benefit-info"><h4>Higher Octane</h4><p>Better performance & efficiency</p></div></div>
-<div class="benefit-row"><div class="benefit-icon-box">🇮🇳</div><div class="benefit-info"><h4>Made in India</h4><p>Supports our farmers & economy</p></div></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- 7. CATALOG -->
-<section class="catalog-section section" id="catalog">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge" style="background:var(--primary-bg);">🚗🏍️ Vehicles</div>
-<h2 class="section-title">Flex Fuel <span class="green">Vehicle Catalog</span></h2>
-<p class="section-subtitle">Explore flex fuel cars & bikes available in India.</p>
-</div>
-<div class="catalog-filters">
-<button class="filter-pill active" data-filter="all">All</button>
-<button class="filter-pill" data-filter="car">🚗 Cars</button>
-<button class="filter-pill" data-filter="bike">🏍️ Bikes</button>
-</div>
-<div class="catalog-grid" id="catalogGrid"></div>
-</div>
-</section>
-
-<!-- BLOG SECTION -->
-<section class="blog-section section" id="blog">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge" style="background:var(--primary-bg);">📰 Blog & Vehicle Guides</div>
-<h2 class="section-title">Latest <span class="green">E85 Insights & Guides</span></h2>
-<p class="section-subtitle">Stay updated with the latest news, vehicle guides, prices, and analysis on E85 fuel in India.</p>
-</div>
-<div class="blog-grid" id="blogGrid">
-<div style="text-align:center;padding:40px;color:#999;grid-column:1/-1">Loading blogs...</div>
-</div>
-</div>
-</section>
-<script src="blogs.js"></script>
-<!-- ABOUT THE CREATOR -->
-<section style="background:linear-gradient(135deg,#e8f5e9 0%,#f1f8e9 100%);padding:70px 20px;text-align:center;">
-<div style="max-width:700px;margin:0 auto;">
-
-  <span style="background:#2e7d32;color:white;padding:6px 18px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">👨‍💻 About the Creator</span>
-
-  <h2 style="font-size:2.2rem;font-weight:900;margin:20px 0 10px;color:#1a1a1a;">Meet the <span style="color:#2e7d32;">Developer</span></h2>
-  <p style="color:#666;font-size:1rem;margin-bottom:36px;">The person behind India's #1 E85 Fuel Intelligence Platform</p>
-
-  <!-- Card -->
-  <div style="background:white;border-radius:20px;padding:36px;box-shadow:0 8px 40px rgba(46,125,50,0.12);text-align:left;border:1px solid #e8f5e9;">
-    
-    <div style="display:flex;align-items:flex-start;gap:28px;flex-wrap:wrap;">
-      
-      <!-- Photo -->
-      <div style="flex-shrink:0;text-align:center;">
-        <img 
-          src="https://raw.githubusercontent.com/YOUR_USERNAME/e85india.com/main/jash-profile.jpg" 
-          alt="Kamlikar Jashwanth - Creator of E85 India"
-          style="width:110px;height:110px;border-radius:50%;object-fit:cover;object-position:top;border:4px solid #2e7d32;box-shadow:0 4px 16px rgba(46,125,50,0.25);"
-        />
-        <div style="margin-top:10px;font-size:0.75rem;color:#999;font-weight:500;">Hyderabad 🇮🇳</div>
-      </div>
-
-      <!-- Info -->
-      <div style="flex:1;min-width:220px;">
-        <h3 style="margin:0 0 4px;font-size:1.4rem;font-weight:800;color:#1a1a1a;">Kamlikar Jashwanth</h3>
-        <p style="margin:0 0 14px;color:#2e7d32;font-size:0.9rem;font-weight:600;">MuleSoft Developer · Web Builder · Entrepreneur</p>
-        
-        <p style="color:#444;font-size:0.92rem;line-height:1.75;margin-bottom:16px;">
-          When E85 fuel officially launched in India on World Environment Day 2025, I realized there was 
-          <strong>no reliable, data-driven platform</strong> for Indian drivers to understand it. 
-          So I built one — from scratch, in days.
-        </p>
-        <p style="color:#444;font-size:0.92rem;line-height:1.75;margin-bottom:20px;">
-          E85 India is my attempt to make clean fuel <strong>accessible, understandable, and actionable</strong> 
-          for every Indian — whether you drive a Hero Splendor or a Toyota Innova. 
-          Real data. No fluff. Built with ❤️ from Hyderabad.
-        </p>
-
-        <!-- Tags -->
-        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;">
-          <span style="background:#e8f5e9;color:#2e7d32;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">⚡ MuleSoft & APIs</span>
-          <span style="background:#e8f5e9;color:#2e7d32;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">🌐 Web Development</span>
-          <span style="background:#e8f5e9;color:#2e7d32;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">🌱 Clean Energy</span>
-          <span style="background:#e8f5e9;color:#2e7d32;padding:4px 12px;border-radius:20px;font-size:0.78rem;font-weight:600;">🔍 SEO & Growth</span>
-        </div>
-
-        <!-- CTA Buttons -->
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
-          <a href="https://www.linkedin.com/in/kamlikar-jashwanth" target="_blank"
-             style="background:#0077b5;color:white;padding:10px 20px;border-radius:10px;font-size:0.85rem;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px;box-shadow:0 4px 12px rgba(0,119,181,0.3);">
-            🔗 Connect on LinkedIn
-          </a>
-          <a href="mailto:kamlikarjashwanth2001@gmail.com"
-             style="background:#f1f8e9;color:#2e7d32;border:2px solid #2e7d32;padding:10px 20px;border-radius:10px;font-size:0.85rem;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
-            ✉️ kamlikarjashwanth2001@gmail.com
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bottom quote -->
-    <div style="margin-top:28px;padding-top:24px;border-top:1px solid #e8f5e9;text-align:center;">
-      <p style="color:#888;font-size:0.88rem;font-style:italic;margin:0;">
-        "India runs on petrol today. Tomorrow, it'll run on ethanol. I'm just building the map." 🌿
-      </p>
-    </div>
-
-  </div>
-</div>
-</section>
-
-<!-- 8. POLICY -->
-<section class="policy-section section" id="policy">
-<div class="section-container">
-<div class="section-header">
-<div class="section-badge">📜 Policy</div>
-<h2 class="section-title">India's <span class="green">Ethanol Roadmap</span></h2>
-<p class="section-subtitle">Government policy milestones for biofuel adoption.</p>
-</div>
-<div class="timeline-wrapper">
-<div class="timeline-item"><span class="timeline-status done">Achieved</span><div class="timeline-year">2018</div><div class="timeline-title">National Biofuels Policy Launched</div><div class="timeline-desc">Initial roadmap for ethanol blending.</div></div>
-<div class="timeline-item"><span class="timeline-status done">Achieved</span><div class="timeline-year">2022</div><div class="timeline-title">E10 Nationwide</div><div class="timeline-desc">10% ethanol blending achieved 5 months ahead of target.</div></div>
-<div class="timeline-item"><span class="timeline-status current">In Progress</span><div class="timeline-year">2025</div><div class="timeline-title">E20 Rollout</div><div class="timeline-desc">20% ethanol blending nationwide. Currently at 18.5%.</div></div>
-<div class="timeline-item"><span class="timeline-status current">In Progress</span><div class="timeline-year">2026</div><div class="timeline-title">E85 Flex Fuel Mass Rollout</div><div class="timeline-desc">320+ E85 stations operational. Major OEMs launching flex-fuel vehicles.</div></div>
-<div class="timeline-item"><span class="timeline-status future">Planned</span><div class="timeline-year">2030</div><div class="timeline-title">48+ E85 Stations</div><div class="timeline-desc">Expand infrastructure across all major highways.</div></div>
-<div class="timeline-item"><span class="timeline-status future">Vision</span><div class="timeline-year">2047</div><div class="timeline-title">Energy Independent India</div><div class="timeline-desc">100% biofuel adoption goal aligned with India@100 vision.</div></div>
-</div>
-</div>
-</section>
-<!-- FOOTER -->
 <footer class="footer">
 <div class="footer-grid">
 <div>
@@ -766,7 +412,6 @@ body.menu-open{overflow:hidden}
 </div>
 <div class="footer-bottom">© 2025 e85india.com. All rights reserved. Made with 💚 for a Greener India.</div>
 </footer>
-
 <script>
 // ============= VEHICLE DATABASE =============
 var vdb = {

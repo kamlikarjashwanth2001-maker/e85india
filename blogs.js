@@ -28,71 +28,11 @@
 
 const blogData = [
     // ===== NEW BLOGS (Top of list) =====
-    {
-        id: 1720608757300,
-        url: 'blog/bhandara-uncle-death-news.html',
-        title: '"Bhandara Kara Do Babuji": The Tragic End to Viral Fame',
-        description: 'The viral "Bhandara Kara Do Babuji" internet sensation has reportedly been found dead near Haridwar. Here is everything we know about the tragic end of Insta Bhandara Uncle.',
-        icon: '🙏',
-        category: 'NEWS',
-        categoryColor: '#37474f',
-        gradient: 'linear-gradient(135deg,#37474f,#263238)',
-        date: 'Jul 10, 2026',
-        readTime: '3 min read',
-        isNew: true
-    },
-    {
-        id: 1720608757200,
-        url: 'blog/bsnl-rs-134166-satellite-phone.html',
-        title: 'BSNL Rs 134,166 Satellite Phone Explained',
-        description: 'Discover the details of the BSNL Rs 134,166 satellite phone. Learn about its features, pricing, plans, and how it is used for critical communication in India.',
-        icon: '📡',
-        category: 'TECH',
-        categoryColor: '#0033a0',
-        gradient: 'linear-gradient(135deg,#0033a0,#002277)',
-        date: 'Jul 10, 2026',
-        readTime: '3 min read',
-        isNew: true
-    },
-    {
-        id: 1720608757100,
-        url: 'blog/peddi-ott-release-date.html',
-        title: 'Peddi OTT Release Date & Platform: When & Where to Watch?',
-        description: 'Looking for the Peddi OTT release date? Find out which platform bought the streaming rights and when Ram Charan\'s Peddi movie will be available online.',
-        icon: '📱',
-        category: 'OTT',
-        categoryColor: '#c62828',
-        gradient: 'linear-gradient(135deg,#c62828,#b71c1c)',
-        date: 'Jul 10, 2026',
-        readTime: '2 min read',
-        isNew: true
-    },
-    {
-        id: 1720608757000,
-        url: 'blog/peddi-full-movie-watch-online-tickets.html',
-        title: 'Peddi Full Movie: Where to Watch Online & Buy Tickets',
-        description: 'Looking for Peddi full movie watch online? Find out how to securely book your tickets and stream the latest hit Peddi using the official District App.',
-        icon: '🍿',
-        category: 'MOVIES',
-        categoryColor: '#6a1b9a',
-        gradient: 'linear-gradient(135deg,#6a1b9a,#4a148c)',
-        date: 'Jul 10, 2026',
-        readTime: '2 min read',
-        isNew: true
-    },
-    {
-        id: 1720608756914,
-        url: 'blog/why-washington-sundar-again-fans-question-indias-selection.html',
-        title: '\'Why Washington Sundar Again?\' Fans Question India\'s Selection',
-        description: 'Following a poor performance against England, all-rounder Washington Sundar\'s place in India\'s T20 team is being heavily debated by fans and critics.',
-        icon: '🏏',
-        category: 'SPORTS',
-        categoryColor: '#1565c0',
-        gradient: 'linear-gradient(135deg,#1565c0,#0d47a1)',
-        date: 'Jul 10, 2026',
-        readTime: '3 min read',
-        isNew: true
-    },
+    
+    
+    
+    
+    
     {
         id: 1783611121832,
         url: 'blog/govt-announces-e85-subsidies-2026.html',
