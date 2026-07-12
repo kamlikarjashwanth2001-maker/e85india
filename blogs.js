@@ -28,6 +28,72 @@
 
 const blogData = [
     {
+    "id": 1783870018710,
+    "url": "blog/e85-fuel-stations-india.html",
+    "title": "E85 Fuel Stations in India: Complete City-Wise Directory",
+    "description": "A comprehensive guide to all E85 fuel stations across India. Find the nearest flex fuel pump in your city with our updated 2026 directory.",
+    "icon": "🗺️",
+    "category": "STATIONS",
+    "categoryColor": "#1565c0",
+    "gradient": "linear-gradient(135deg,#1565c0,#1976d2)",
+    "date": "Jul 12, 2026",
+    "readTime": "10 min read",
+    "isNew": true
+},
+    {
+    "id": 1783870018577,
+    "url": "blog/e85-fuel-stations-delhi-ncr.html",
+    "title": "E85 Fuel Stations in Delhi NCR: Locations & Prices",
+    "description": "Looking for E85 fuel in Delhi, Gurgaon, or Noida? Check our verified list of Delhi NCR E85 station locations, live prices, and availability.",
+    "icon": "🏛️",
+    "category": "STATIONS",
+    "categoryColor": "#1565c0",
+    "gradient": "linear-gradient(135deg,#1565c0,#1976d2)",
+    "date": "Jul 12, 2026",
+    "readTime": "10 min read",
+    "isNew": true
+},
+    {
+    "id": 1783870018910,
+    "url": "blog/e85-fuel-stations-mumbai-pune.html",
+    "title": "E85 Fuel Stations in Mumbai & Pune: Locations Map",
+    "description": "Find E85 flex fuel stations across Mumbai and Pune. Complete list of verified petrol pumps offering ethanol blended fuel with current prices.",
+    "icon": "🌊",
+    "category": "STATIONS",
+    "categoryColor": "#1565c0",
+    "gradient": "linear-gradient(135deg,#1565c0,#1976d2)",
+    "date": "Jul 12, 2026",
+    "readTime": "10 min read",
+    "isNew": true
+},
+    {
+    "id": 1783870018618,
+    "url": "blog/e85-fuel-stations-bengaluru-hyderabad.html",
+    "title": "E85 Fuel Stations in Bengaluru & Hyderabad",
+    "description": "The ultimate South India guide for E85 fuel. Find the nearest flex fuel stations in Bengaluru (Bangalore) and Hyderabad with exact locations.",
+    "icon": "💻",
+    "category": "STATIONS",
+    "categoryColor": "#1565c0",
+    "gradient": "linear-gradient(135deg,#1565c0,#1976d2)",
+    "date": "Jul 12, 2026",
+    "readTime": "10 min read",
+    "isNew": true
+},
+    {
+    "id": 1783870018556,
+    "url": "blog/top-biofuel-companies-india.html",
+    "title": "Praj Industries & Other Top Biofuel Companies in India",
+    "description": "Explore the leading biofuel companies driving India’s ethanol revolution, featuring Praj Industries, Shree Renuka Sugars, and Balarampur Chini.",
+    "icon": "🏭",
+    "category": "INDUSTRY",
+    "categoryColor": "#e65100",
+    "gradient": "linear-gradient(135deg,#e65100,#ff6f00)",
+    "date": "Jul 12, 2026",
+    "readTime": "10 min read",
+    "isNew": true
+},
+
+    {
     "id": 1783868133090,
     "url": "blog/toyota_innova_hycross_flex_fuel.html",
     "title": "Toyota Innova HyCross Flex Fuel: Launch Date & Specs",
