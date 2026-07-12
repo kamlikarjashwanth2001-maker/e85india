@@ -99,6 +99,59 @@ const blogData = [
         isE85: false
     },
     // ===== NEW BLOGS (Top of list) =====
+
+    {
+    "id": 1783868133090,
+    "url": "blog/toyota_innova_hycross_flex_fuel.html",
+    "title": "Toyota Innova HyCross Flex Fuel: Launch Date & Specs",
+    "description": "Discover the Toyota Innova HyCross Flex Fuel prototype, its expected launch date, pricing, specs, and how it compares to the petrol hybrid.",
+    "icon": "🚙",
+    "category": "VEHICLES",
+    "categoryColor": "#E65100",
+    "gradient": "linear-gradient(135deg,#E65100,#FFA726)",
+    "date": "Jul 12, 2026",
+    "readTime": "12 min read",
+    "isNew": true
+},
+    {
+    "id": 1783868133091,
+    "url": "blog/tvs-apache-rtr-160-ffv-review.html",
+    "title": "TVS Apache RTR 160 4V FFV: Price, Mileage & Specs",
+    "description": "Complete review of the TVS Apache RTR 160 4V FFV flex-fuel motorcycle. Check E85 mileage, expected price, and launch date in India.",
+    "icon": "🏍️",
+    "category": "BIKES LIST",
+    "categoryColor": "#FF6F00",
+    "gradient": "linear-gradient(135deg,#FF6F00,#FFA726)",
+    "date": "Jul 12, 2026",
+    "readTime": "11 min read",
+    "isNew": true
+},
+    {
+    "id": 1783868133092,
+    "url": "blog/e85-conversion-kits-india.html",
+    "title": "E85 Conversion Kits in India: Price, Legality & Top Brands",
+    "description": "Looking for E85 conversion kits in India? Learn about the pricing, legality, top global brands, and the truth about converting your old car.",
+    "icon": "🔧",
+    "category": "CONVERSION",
+    "categoryColor": "#FF6F00",
+    "gradient": "linear-gradient(135deg,#E65100,#FF6F00)",
+    "date": "Jul 12, 2026",
+    "readTime": "10 min read",
+    "isNew": true
+},
+    {
+    "id": 1783868133093,
+    "url": "blog/e85-fuel-price-india-today.html",
+    "title": "E85 Fuel Price in India Today: Live Rates & Calculator",
+    "description": "Check today’s live E85 fuel prices across major Indian cities, compare with petrol, and calculate your annual savings using our interactive guide.",
+    "icon": "💰",
+    "category": "PRICE TODAY",
+    "categoryColor": "#1B5E20",
+    "gradient": "linear-gradient(135deg,#1B5E20,#43A047)",
+    "date": "Jul 12, 2026",
+    "readTime": "9 min read",
+    "isNew": true
+},
     
     
     
