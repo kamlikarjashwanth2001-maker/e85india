@@ -19,6 +19,7 @@ function calculateReadTime(text) {
 // Basic Markdown to HTML converter
 function convertMdToHtml(md) {
     let html = md
+        .replace(/^---[\s\S]*?^---\r?\n/m, '') // Strip YAML frontmatter
         .replace(/^# (.*$)/gim, '') // Remove H1, it's injected in template
         .replace(/^## (.*)$/gim, (match, content) => { let cleanText = content.replace(/<[^>]*>?/gm, '').trim(); let id = cleanText.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); return `<h2 id="${id}">${cleanText}</h2>`; })
         .replace(/^### (.*)$/gim, (match, content) => { let cleanText = content.replace(/<[^>]*>?/gm, '').trim(); let id = cleanText.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); return `<h3 id="${id}">${cleanText}</h3>`; })
