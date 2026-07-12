@@ -33,6 +33,8 @@ In this comprehensive guide, we will dive deep into everything you need to know 
 ---
 
 <a id="introduction"></a>
+![TVS Apache RTR 160 FFV](../images/apache_flex.png)
+
 ## 1. Introduction to the TVS Apache RTR 160 4V FFV
 
 The TVS Apache series has long been the darling of Indian motorcycle enthusiasts who crave track-inspired performance in an accessible package. The standard Apache RTR 160 4V is already widely regarded as the benchmark in the 160cc segment, offering a sublime balance of power, agility, and technology. 

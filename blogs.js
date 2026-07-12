@@ -27,79 +27,6 @@
 // ========================================
 
 const blogData = [
-
-    {
-        id: 1720608757300,
-        url: 'blog/bhandara-uncle-death-news.html',
-        title: '"Bhandara Kara Do Babuji": The Tragic End to Viral Fame',
-        description: 'The viral "Bhandara Kara Do Babuji" internet sensation has reportedly been found dead near Haridwar.',
-        icon: '🙏',
-        category: 'NEWS',
-        categoryColor: '#37474f',
-        gradient: 'linear-gradient(135deg,#37474f,#263238)',
-        date: 'Jul 10, 2026',
-        readTime: '3 min read',
-        isNew: true,
-        isE85: false
-    },
-    {
-        id: 1720608757200,
-        url: 'blog/bsnl-rs-134166-satellite-phone.html',
-        title: 'BSNL Rs 134,166 Satellite Phone Explained',
-        description: 'Discover the details of the BSNL Rs 134,166 satellite phone. Learn about its features, pricing, plans.',
-        icon: '📡',
-        category: 'TECH',
-        categoryColor: '#0033a0',
-        gradient: 'linear-gradient(135deg,#0033a0,#002277)',
-        date: 'Jul 10, 2026',
-        readTime: '3 min read',
-        isNew: true,
-        isE85: false
-    },
-    {
-        id: 1720608757100,
-        url: 'blog/peddi-ott-release-date.html',
-        title: 'Peddi OTT Release Date & Platform: When & Where to Watch?',
-        description: 'Looking for the Peddi OTT release date? Find out which platform bought the digital rights and when you can stream.',
-        icon: '📱',
-        category: 'OTT',
-        categoryColor: '#d32f2f',
-        gradient: 'linear-gradient(135deg,#d32f2f,#f44336)',
-        date: 'Jul 10, 2026',
-        readTime: '2 min read',
-        isNew: true,
-        isE85: false
-    },
-    {
-        id: 1720608757000,
-        url: 'blog/peddi-full-movie-watch-online-tickets.html',
-        title: 'Peddi Full Movie: Where to Watch Online & Buy Tickets',
-        description: 'Looking for Peddi full movie watch online? Find out how to securely book your tickets and stream the latest hit.',
-        icon: '🍿',
-        category: 'MOVIES',
-        categoryColor: '#512da8',
-        gradient: 'linear-gradient(135deg,#512da8,#673ab7)',
-        date: 'Jul 10, 2026',
-        readTime: '2 min read',
-        isNew: true,
-        isE85: false
-    },
-    {
-        id: 1720608756900,
-        url: 'blog/why-washington-sundar-again-fans-question-indias-selection.html',
-        title: 'Why Washington Sundar Again? Fans Question India\'s Selection',
-        description: 'Cricket fans are asking "Why Washington Sundar again?" after his inclusion in the latest squad.',
-        icon: '🏏',
-        category: 'SPORTS',
-        categoryColor: '#1976d2',
-        gradient: 'linear-gradient(135deg,#1976d2,#2196f3)',
-        date: 'Jul 10, 2026',
-        readTime: '3 min read',
-        isNew: true,
-        isE85: false
-    },
-    // ===== NEW BLOGS (Top of list) =====
-
     {
     "id": 1783868133090,
     "url": "blog/toyota_innova_hycross_flex_fuel.html",
@@ -237,6 +164,79 @@ const blogData = [
         isNew: true
     },
     
+
+    {
+        id: 1720608757300,
+        url: 'blog/bhandara-uncle-death-news.html',
+        title: '"Bhandara Kara Do Babuji": The Tragic End to Viral Fame',
+        description: 'The viral "Bhandara Kara Do Babuji" internet sensation has reportedly been found dead near Haridwar.',
+        icon: '🙏',
+        category: 'NEWS',
+        categoryColor: '#37474f',
+        gradient: 'linear-gradient(135deg,#37474f,#263238)',
+        date: 'Jul 10, 2026',
+        readTime: '3 min read',
+        isNew: true,
+        isE85: false
+    },
+    {
+        id: 1720608757200,
+        url: 'blog/bsnl-rs-134166-satellite-phone.html',
+        title: 'BSNL Rs 134,166 Satellite Phone Explained',
+        description: 'Discover the details of the BSNL Rs 134,166 satellite phone. Learn about its features, pricing, plans.',
+        icon: '📡',
+        category: 'TECH',
+        categoryColor: '#0033a0',
+        gradient: 'linear-gradient(135deg,#0033a0,#002277)',
+        date: 'Jul 10, 2026',
+        readTime: '3 min read',
+        isNew: true,
+        isE85: false
+    },
+    {
+        id: 1720608757100,
+        url: 'blog/peddi-ott-release-date.html',
+        title: 'Peddi OTT Release Date & Platform: When & Where to Watch?',
+        description: 'Looking for the Peddi OTT release date? Find out which platform bought the digital rights and when you can stream.',
+        icon: '📱',
+        category: 'OTT',
+        categoryColor: '#d32f2f',
+        gradient: 'linear-gradient(135deg,#d32f2f,#f44336)',
+        date: 'Jul 10, 2026',
+        readTime: '2 min read',
+        isNew: true,
+        isE85: false
+    },
+    {
+        id: 1720608757000,
+        url: 'blog/peddi-full-movie-watch-online-tickets.html',
+        title: 'Peddi Full Movie: Where to Watch Online & Buy Tickets',
+        description: 'Looking for Peddi full movie watch online? Find out how to securely book your tickets and stream the latest hit.',
+        icon: '🍿',
+        category: 'MOVIES',
+        categoryColor: '#512da8',
+        gradient: 'linear-gradient(135deg,#512da8,#673ab7)',
+        date: 'Jul 10, 2026',
+        readTime: '2 min read',
+        isNew: true,
+        isE85: false
+    },
+    {
+        id: 1720608756900,
+        url: 'blog/why-washington-sundar-again-fans-question-indias-selection.html',
+        title: 'Why Washington Sundar Again? Fans Question India\'s Selection',
+        description: 'Cricket fans are asking "Why Washington Sundar again?" after his inclusion in the latest squad.',
+        icon: '🏏',
+        category: 'SPORTS',
+        categoryColor: '#1976d2',
+        gradient: 'linear-gradient(135deg,#1976d2,#2196f3)',
+        date: 'Jul 10, 2026',
+        readTime: '3 min read',
+        isNew: true,
+        isE85: false
+    },
+    // ===== NEW BLOGS (Top of list) =====
+
     // ===== EXISTING BLOGS =====
     {
         id: 5,

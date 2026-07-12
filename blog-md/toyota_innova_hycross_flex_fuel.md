@@ -33,9 +33,11 @@ In this comprehensive guide, we break down everything you need to know about the
 
 ---
 
-## 1. Introduction to the Innova HyCross Flex Fuel <a name="introduction"></a>
+![Toyota Innova Flex Fuel](../images/innova_flex.png)
 
-> **
+## 1. Introduction to the Innova HyCross Flex Fuel 
+
+
 
 Showcased at major automotive expos, the Toyota Innova HyCross Flex Fuel is the world’s first BS6 Phase-II compliant flex-fuel strong hybrid vehicle. It represents a significant leap forward in alternative fuel technology, engineered specifically to run on fuel blends containing up to 85% ethanol (E85).
 
@@ -43,7 +45,7 @@ For Indian consumers, the Innova has always been the gold standard for MPVs. By 
 
 ---
 
-## 2. What is a Flex Fuel Hybrid? <a name="what-is-a-flex-fuel-hybrid"></a>
+## 2. What is a Flex Fuel Hybrid? 
 
 A Flex Fuel Vehicle (FFV) is designed to run on more than one type of fuel, typically a blend of petrol and ethanol. What makes the Innova HyCross unique is that it is a **Strong Hybrid Flex Fuel Vehicle**.
 
@@ -55,9 +57,9 @@ By combining the low emissions of E85 fuel with the high efficiency of a strong 
 
 ---
 
-## 3. Engine and Performance Specifications <a name="specifications"></a>
+## 3. Engine and Performance Specifications 
 
-> **
+
 
 The Innova HyCross Flex Fuel prototype is built on Toyota's TNGA (Toyota New Global Architecture) platform. Here are the core specifications:
 
@@ -74,7 +76,7 @@ The Innova HyCross Flex Fuel prototype is built on Toyota's TNGA (Toyota New Glo
 
 ---
 
-## 4. Expected Launch Date in India <a name="launch-date"></a>
+## 4. Expected Launch Date in India 
 
 As of mid-2026, the Toyota Innova HyCross Flex Fuel remains a **prototype and demonstration vehicle**. Toyota Kirloskar Motor (TKM) has not announced an official commercial launch date for the retail market.
 
@@ -91,7 +93,7 @@ The launch of any OEM (Original Equipment Manufacturer) flex-fuel vehicle in Ind
 
 ---
 
-## 5. Estimated Price and Variants <a name="pricing"></a>
+## 5. Estimated Price and Variants 
 
 When the Innova HyCross Flex Fuel eventually launches, how much will it cost? 
 
@@ -105,7 +107,7 @@ Developing a flex-fuel engine requires specialized components to prevent ethanol
 
 ---
 
-## 6. Mileage and Running Costs on E85 <a name="mileage-costs"></a>
+## 6. Mileage and Running Costs on E85 
 
 A common concern with ethanol is its lower energy density compared to petrol. E85 contains about 25-30% less energy per litre. Consequently, flex-fuel vehicles typically experience a drop in fuel efficiency (mileage).
 
@@ -126,9 +128,9 @@ When calculating the cost per kilometer (₹/km), the Innova HyCross Flex Fuel i
 
 ---
 
-## 7. Innova HyCross E85 vs Petrol Hybrid <a name="comparison"></a>
+## 7. Innova HyCross E85 vs Petrol Hybrid 
 
-> **
+
 
 How does the prototype compare to the car currently sitting in showrooms?
 
@@ -143,7 +145,7 @@ How does the prototype compare to the car currently sitting in showrooms?
 
 ---
 
-## 8. Government Subsidies and Tax Benefits <a name="subsidies"></a>
+## 8. Government Subsidies and Tax Benefits 
 
 The Indian Government, spearheaded by the Ministry of Road Transport and Highways (MoRTH), is actively encouraging the adoption of biofuels to reduce the nation's massive crude oil import bill.
 
@@ -155,7 +157,7 @@ While specific retail subsidies for the Innova HyCross Flex Fuel have not been f
 
 ---
 
-## 9. Infrastructure: Where to Find E85 Fuel <a name="infrastructure"></a>
+## 9. Infrastructure: Where to Find E85 Fuel 
 
 Owning an E85 Innova HyCross will only be practical if you can refuel it. The Oil Marketing Companies (OMCs) in India—IOCL, BPCL, and HPCL—are rapidly expanding their E85 pump network.
 
@@ -163,7 +165,7 @@ Major metropolitan areas like Delhi NCR, Mumbai, and Pune currently have active 
 
 ---
 
-## 10. Frequently Asked Questions (FAQs) <a name="faqs"></a>
+## 10. Frequently Asked Questions (FAQs) 
 
 **Q1: Can I buy the Toyota Innova HyCross Flex Fuel right now?**
 No. As of 2026, it is only a demonstration prototype. Toyota has not announced a commercial launch date for retail customers.
@@ -181,7 +183,7 @@ While aftermarket E85 conversion kits exist, installing them on a highly complex
 
 ---
 
-## 11. Conclusion <a name="conclusion"></a>
+## 11. Conclusion 
 
 The **Toyota Innova HyCross Flex Fuel** is a glimpse into the immediate future of Indian motoring. By successfully pairing strong hybrid technology with an E85-compatible engine, Toyota has created a powertrain that slashes emissions while drastically reducing the country's reliance on imported crude oil.
 

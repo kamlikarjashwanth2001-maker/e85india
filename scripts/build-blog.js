@@ -20,8 +20,8 @@ function calculateReadTime(text) {
 function convertMdToHtml(md) {
     let html = md
         .replace(/^# (.*$)/gim, '') // Remove H1, it's injected in template
-        .replace(/^## (.*$)/gim, '<h2 id="$1">$1</h2>') // H2
-        .replace(/^### (.*$)/gim, '<h3 id="$1">$1</h3>') // H3
+        .replace(/^## (.*)$/gim, (match, content) => { let cleanText = content.replace(/<[^>]*>?/gm, '').trim(); let id = cleanText.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); return `<h2 id="${id}">${cleanText}</h2>`; })
+        .replace(/^### (.*)$/gim, (match, content) => { let cleanText = content.replace(/<[^>]*>?/gm, '').trim(); let id = cleanText.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); return `<h3 id="${id}">${cleanText}</h3>`; })
         .replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>')
         .replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>')
         .replace(/\*(.*)\*/gim, '<em>$1</em>')
