@@ -35,9 +35,7 @@ In this comprehensive guide, we break down everything you need to know about the
 
 ## 1. Introduction to the Innova HyCross Flex Fuel <a name="introduction"></a>
 
-> **[Image Prompt]** A sleek, high-resolution lifestyle shot of the Toyota Innova HyCross Flex Fuel prototype driving on a modern Indian highway. The car features subtle green "Flex Fuel" badging. 4k, photorealistic, automotive photography.  
-> **[ALT Text]** Toyota Innova HyCross Flex Fuel driving on an Indian highway.
-> **[Suggested Filename]** toyota-innova-flex-fuel-hero.webp
+> **
 
 Showcased at major automotive expos, the Toyota Innova HyCross Flex Fuel is the world’s first BS6 Phase-II compliant flex-fuel strong hybrid vehicle. It represents a significant leap forward in alternative fuel technology, engineered specifically to run on fuel blends containing up to 85% ethanol (E85).
 
@@ -59,9 +57,7 @@ By combining the low emissions of E85 fuel with the high efficiency of a strong 
 
 ## 3. Engine and Performance Specifications <a name="specifications"></a>
 
-> **[Image Prompt]** A technical cutaway 3D render of the Toyota Innova HyCross Flex Fuel engine, highlighting the hybrid battery system, the fuel injectors, and the E85 fuel lines in bright green.  
-> **[ALT Text]** Technical diagram of the Toyota Innova HyCross Flex Fuel engine and hybrid system.
-> **[Suggested Filename]** toyota-innova-flex-fuel-engine-diagram.webp
+> **
 
 The Innova HyCross Flex Fuel prototype is built on Toyota's TNGA (Toyota New Global Architecture) platform. Here are the core specifications:
 
@@ -132,9 +128,7 @@ When calculating the cost per kilometer (₹/km), the Innova HyCross Flex Fuel i
 
 ## 7. Innova HyCross E85 vs Petrol Hybrid <a name="comparison"></a>
 
-> **[Image Prompt]** A split-screen graphic showing the E85 Flex Fuel Innova on the left (green hue, eco-friendly background) and the standard Petrol Innova on the right (blue hue, city background).  
-> **[ALT Text]** Comparison between Toyota Innova HyCross Flex Fuel and Standard Petrol Hybrid.
-> **[Suggested Filename]** toyota-innova-flex-fuel-vs-petrol-comparison.webp
+> **
 
 How does the prototype compare to the car currently sitting in showrooms?
 
