@@ -4,25 +4,54 @@ const path = require('path');
 const srcDir = path.join(__dirname, '../blog-md');
 const destDir = path.join(__dirname, '../blog');
 const sitemapPath = path.join(__dirname, '../sitemap.xml');
+const templatePath = path.join(__dirname, 'blog-template.html');
 
-// Ensure directories exist
 if (!fs.existsSync(srcDir)) fs.mkdirSync(srcDir, { recursive: true });
 if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true });
 
-// Basic Markdown to HTML converter (simplified for this script)
+const template = fs.readFileSync(templatePath, 'utf8');
+
+function calculateReadTime(text) {
+    const words = text.split(/\s+/).length;
+    return Math.ceil(words / 200); // 200 words per min
+}
+
+// Basic Markdown to HTML converter
 function convertMdToHtml(md) {
     let html = md
-        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+        .replace(/^# (.*$)/gim, '') // Remove H1, it's injected in template
+        .replace(/^## (.*$)/gim, '<h2 id="$1">$1</h2>') // H2
+        .replace(/^### (.*$)/gim, '<h3 id="$1">$1</h3>') // H3
         .replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>')
         .replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>')
         .replace(/\*(.*)\*/gim, '<em>$1</em>')
-        .replace(/!\[(.*?)\]\((.*?)\)/gim, "<img alt='$1' src='$2' />")
+        // Advanced image replacement
+        .replace(/!\[(.*?)\]\((.*?)\)/gim, (match, alt, src) => {
+            return `<img alt="${alt}" src="${src}" loading="lazy" />`;
+        })
         .replace(/\[(.*?)\]\((.*?)\)/gim, "<a href='$2'>$1</a>")
         .replace(/\n$/gim, '<br />');
 
+    // Fix IDs in h2/h3 (remove HTML tags inside them and lowercase)
+    html = html.replace(/<h([23]) id="(.*?)">(.*?)<\/h\1>/g, (match, level, id, content) => {
+        const cleanId = id.replace(/<[^>]*>?/gm, '').replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+        return `<h${level} id="${cleanId}">${content}</h${level}>`;
+    });
+
     return html.trim();
+}
+
+function generateTOC(md) {
+    const headings = md.match(/^## (.*$)/gim) || [];
+    let toc = '';
+    headings.forEach(heading => {
+        let text = heading.replace(/^## /, '');
+        // strip HTML tags
+        let cleanText = text.replace(/<[^>]*>?/gm, '');
+        let id = cleanText.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+        toc += `<li><a href="#${id}">${cleanText}</a></li>\n`;
+    });
+    return toc;
 }
 
 function processFiles() {
@@ -31,42 +60,53 @@ function processFiles() {
 
     files.forEach(file => {
         const content = fs.readFileSync(path.join(srcDir, file), 'utf8');
-        // Extract frontmatter
-        const titleMatch = content.match(/title:\s*"(.*?)"/);
-        const title = titleMatch ? titleMatch[1] : 'E85 India Blog';
+        
+        // Extract frontmatter safely
+        let frontmatter = {};
+        const fmMatch = content.match(/---\n([\s\S]*?)\n---/);
+        if (fmMatch) {
+            const lines = fmMatch[1].split('\n');
+            lines.forEach(line => {
+                const parts = line.split(/:(.*)/);
+                if (parts.length > 1) {
+                    frontmatter[parts[0].trim()] = parts[1].trim().replace(/^"|"$/g, '');
+                }
+            });
+        }
+        
+        const title = frontmatter.title || 'E85 India Blog';
+        const metaTitle = frontmatter.meta_title || title;
+        const metaDesc = frontmatter.meta_description || '';
+        const primaryKeyword = frontmatter.primary_keyword || '';
+        const secondaryKeywords = frontmatter.secondary_keywords || '';
+        const canonicalUrl = frontmatter.canonical_url || `https://e85india.com/blog/${file.replace('.md', '.html')}`;
+        
+        const bodyContent = content.replace(/---\n([\s\S]*?)\n---/, '').trim();
+        const htmlContent = convertMdToHtml(bodyContent);
+        const readTime = calculateReadTime(bodyContent);
+        const publishDate = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        const tocContent = generateTOC(bodyContent);
 
-        const htmlContent = convertMdToHtml(content.replace(/---[\s\S]*?---/, '')); // strip frontmatter
+        // Inject into template
+        let pageHtml = template
+            .replace(/{{META_TITLE}}/g, metaTitle)
+            .replace(/{{META_DESCRIPTION}}/g, metaDesc)
+            .replace(/{{PRIMARY_KEYWORD}}/g, primaryKeyword)
+            .replace(/{{SECONDARY_KEYWORDS}}/g, secondaryKeywords)
+            .replace(/{{CANONICAL_URL}}/g, canonicalUrl)
+            .replace(/{{TITLE}}/g, title)
+            .replace(/{{READ_TIME}}/g, readTime)
+            .replace(/{{PUBLISH_DATE}}/g, publishDate)
+            .replace(/{{CONTENT}}/g, htmlContent)
+            .replace(/{{TOC_CONTENT}}/g, tocContent)
+            .replace(/{{HERO_IMG_TAG}}/g, `<img src="https://via.placeholder.com/1000x500.png?text=${encodeURIComponent(title)}" alt="${title} Hero Image" />`); // Placeholder until real images are added
+            
         const fileNameHtml = file.replace('.md', '.html');
-
-        const fullHtml = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${title}</title>
-    <link rel="stylesheet" href="../styles.css"> <!-- Assuming a global CSS -->
-</head>
-<body>
-    <header>
-        <h1>E85 India</h1>
-        <nav><a href="/">Home</a> | <a href="/blog/index.html">Blog</a></nav>
-    </header>
-    <main>
-        <article class="blog-content">
-            ${htmlContent}
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2026 E85 India.</p>
-    </footer>
-</body>
-</html>`;
-
-        fs.writeFileSync(path.join(destDir, fileNameHtml), fullHtml);
+        fs.writeFileSync(path.join(destDir, fileNameHtml), pageHtml);
         urls.push(`https://e85india.com/blog/${fileNameHtml}`);
     });
 
-    // Update sitemap logic (simplified)
+    // Update sitemap logic
     if (fs.existsSync(sitemapPath) && urls.length > 0) {
         let sitemap = fs.readFileSync(sitemapPath, 'utf8');
         urls.forEach(url => {
@@ -77,7 +117,7 @@ function processFiles() {
         fs.writeFileSync(sitemapPath, sitemap);
     }
     
-    console.log(`Processed ${files.length} articles.`);
+    console.log(`Processed ${files.length} articles using the new template engine.`);
 }
 
 processFiles();
