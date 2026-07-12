@@ -33,6 +33,8 @@ For more background on ethanol blending, check out our guide on [What is E85 Fue
 
 ## What Exactly is an E85 Conversion Kit?
 
+![E85 Conversion Kit](../images/conversion_kit.png)
+
 An E85 conversion kit, also known as a flex-fuel conversion kit, is an aftermarket electronic and mechanical system designed to allow a standard gasoline (petrol) vehicle to operate on high-ethanol fuel blends, primarily E85 (a mixture of 85% ethanol and 15% petrol), or any combination of ethanol and petrol.
 
 Standard petrol engines are calibrated at the factory to run optimally on specific grades of unleaded petrol. When you introduce a fuel with a significantly higher ethanol content, the engine's standard Engine Control Unit (ECU) struggles to manage the combustion process effectively. This is because ethanol has a lower energy density than standard petrol, meaning the engine needs to inject a larger volume of fuel (roughly 30% to 40% more) to achieve the same power output and maintain a safe air-to-fuel ratio.
