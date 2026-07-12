@@ -29,6 +29,8 @@ But what exactly is the E85 fuel price in India today? How does it compare to st
 
 ---
 
+![E85 Fuel Pump](../images/e85_pump.png)
+
 ## 1. Introduction to E85 Fuel in India 
 
 E85 is a high-level ethanol blend consisting of 51% to 83% ethanol (though nominally 85%) and the remaining balance being standard unleaded petrol. In countries like Brazil and the United States, E85 is already a mainstream fuel, powering millions of flex-fuel vehicles daily. For India, the adoption of E85 represents a strategic move to reduce the nation's immense crude oil import bill—which runs into billions of dollars annually—and to mitigate urban air pollution.
